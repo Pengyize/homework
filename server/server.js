@@ -25,12 +25,6 @@ var server = http.createServer(function(request, response){
 
 
 
-
-
-
-
-
-
   console.log('奕泽说：得到 HTTP 路径\n' + path)
   if(path == '/style.css'){
     response.setHeader('Content-Type', 'text/css; charset=utf-8')
@@ -48,10 +42,6 @@ var server = http.createServer(function(request, response){
     response.statusCode = 404
     response.end()
   }
-
-
-
-
 
 
 
