@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+#canvas{
+    background: white;
+    display: block;
+}
+
+.actions{
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+
+.colors{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+.colors > button{
+    width: 20px;
+    height: 20px;
+}
+
+.actions > #brush{
+    display: none;
+}
+
+.actions.x > #brush{
+    display: inline-block;
+}
+
+.actions.x > #eraser{
+    display: none;
+}
+
