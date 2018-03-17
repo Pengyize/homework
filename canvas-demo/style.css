@@ -1,5 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     margin: 0;
+    overflow: hidden;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
 }
 
 #canvas{
@@ -9,14 +32,27 @@ body{
 
 .actions{
     position: fixed;
-    bottom: 5px;
-    left: 5px;
+    top: 2px;
+    left: 2px;
+    padding: 15px 20px 20px 10px;
 }
+
+.actions svg{
+    width: 2em;
+    height: 2em;
+    transition: all 0.3s;
+    margin: 0 8px;
+}
+
+.actions svg.active{
+    transform: scale(1.4);
+}
+
 
 .colors{
     position: fixed;
-    top: 5px;
-    left: 5px;
+    top: 15px;
+    left: 194px;
 }
 
 .colors > button{
@@ -24,15 +60,56 @@ body{
     height: 20px;
 }
 
-.actions > #brush{
-    display: none;
+#clear{
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+
 }
 
-.actions.x > #brush{
-    display: inline-block;
+#save{
+    position: fixed;
+    right: 56px;
+    bottom: 11px;
+    width: 3.2em;
+    height: 3.2em;
 }
 
-.actions.x > #eraser{
-    display: none;
+ol > li {
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    margin: 0 8px 8px 8px;
+    float: left;
+    border-radius: 50%;
+    transition: all 0.3s;
 }
 
+ol > li.active{
+    box-shadow: 0 0 8px rgba(0,0,0,1);
+}
+
+.black{
+    background-color: black;
+}
+.grey{
+    background-color: grey;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: yellow;
+}
+.purple{
+    background-color: purple;
+}

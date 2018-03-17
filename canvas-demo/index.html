@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="KEYWords" content="画板">
-    <meta name="DEscription" content="画画">
+    <meta name="KEYWords" content="奕泽画板">
+    <meta name="DEscription" content="奕泽画板">
     <meta name="Author" content="彭奕泽">
     <meta name="viewport" content="width=device-width, user-scalable=no ,initial-scale=1.0">
-    <title>画画</title>
+    <title>奕泽画板</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/pyz.gif" media="screen">
@@ -15,24 +15,42 @@
 
 <canvas id="canvas"></canvas>
 
-<div class="colors">
-    <button id="black"></button>
-    <button id="grey"></button>
-    <button id="white"></button>
-    <button id="red"></button>
-    <button id="green"></button>
-    <button id="blue"></button>
-    <button id="orange"></button>
-    <button id="yellow"></button>
-    <button id="purple"></button>
-</div>
+
 
 <div class="actions" id="actions">
-    <button class="btn btn-primary" id="eraser">橡皮擦</button>
-    <button class="btn btn-primary" id="brush">画笔</button>
+    <svg id="pen1" class="icon active">
+        <use xlink:href="#icon-Pen"></use>
+    </svg>
+
+    <svg id="pen2" class="icon">
+        <use xlink:href="#icon-pencil"></use>
+    </svg>
+
+    <svg id="eraser" class="icon">
+        <use xlink:href="#icon-eraser"></use>
+    </svg>
+
+    <svg id="clear" class="icon">
+        <use xlink:href="#icon-garbage"></use>
+    </svg>
+
+    <svg id="save" class="icon">
+        <use xlink:href="#icon-download"></use>
+    </svg>
 </div>
 
+<ol class="colors clearfix">
+    <li id="black" class="black active"></li>
+    <li id="grey" class="grey"></li>
+    <li id="red" class="red"></li>
+    <li id="green" class="green"></li>
+    <li id="blue" class="blue "></li>
+    <li id="orange" class="orange "></li>
+    <li id="yellow" class="yellow "></li>
+    <li id="purple" class="purple"></li>
+</ol>
 
 <script src="main.js"></script>
+<script src="//at.alicdn.com/t/font_595021_nc0f6jp4mjx20529.js"></script>
 </body>
 </html>

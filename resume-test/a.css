@@ -1,7 +1,8 @@
 body{
     background-color: #efefef;
     margin: 0;
-    font-family: Hiragino Sans GB,Microsoft Yahei;
+    /*font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;*/
+    font-family: Hiragino Sans GB, Microsoft Yahei, serif;
 
 }
 
@@ -82,8 +83,9 @@ h2,h3,h4,h5,h6{
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     padding-top: 10px;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
     display: block;
+    transition: 0.5s;
 }
 
 .topNavBar  nav > ul > li > a:hover{
@@ -170,7 +172,7 @@ h2,h3,h4,h5,h6{
 }
 
 .userCard .pictureAndText{
-    padding: 50px;
+    padding: 37px 50px;
 }
 
 .userCard dl dt,
