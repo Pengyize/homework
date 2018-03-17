@@ -127,7 +127,8 @@ function listenToUser(canvas) {
         var a = document.createElement('a');
         document.body.appendChild(a);
         a.href = url;
-        a.download = 'xxx';
+        a.download = '画';
+        a.target = '_blank';
         a.click();
     };
 
