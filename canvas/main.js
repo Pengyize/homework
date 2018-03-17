@@ -2,6 +2,7 @@ var canvas = document.getElementById('canvas');
 
 var pen1 = document.getElementById('pen1');
 var pen2 = document.getElementById('pen2');
+var eraser = document.getElementById('eraser');
 var clear =document.getElementById('clear');
 var save = document.getElementById('save');
 
@@ -17,6 +18,9 @@ var context = canvas.getContext('2d');
 
 
 autoSetCanvasSize(canvas);
+
+context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+context.fillRect(0,0,canvas.width,canvas.height);
 
 listenToUser(canvas);
 
@@ -56,14 +60,13 @@ function autoSetCanvasSize(canvas) {
         canvas.width = pageWidth;
         canvas.height = pageHeight;
     }
+
 }
 
 
 function listenToUser(canvas) {
-    context.fillStyle = '#fff';                             //使画的背景颜色变成白色
-    context.fillRect(0,0,canvas.width,canvas.height);       //给画的背景填充fillStyle里的颜色
-
     context.fillStyle = '#000';     //将画笔中的circle变成黑色
+
     black.onclick = function () {
         context.strokeStyle = 'black';
         context.fillStyle = 'black';
@@ -120,9 +123,11 @@ function listenToUser(canvas) {
         eraser.classList.add('active');
         pen1.classList.remove('active');
         pen2.classList.remove('active');
+
     };
     clear.onclick = function () {
-        context.clearRect(0,0,canvas.width,canvas.height);
+        context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+        context.fillRect(0,0,canvas.width,canvas.height);
     };
 
     save.onclick = function () {
@@ -131,7 +136,6 @@ function listenToUser(canvas) {
         document.body.appendChild(a);
         a.href = url;
         a.download = '画';
-        a.target = '_blank';
         a.click();
     };
 
