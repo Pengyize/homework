@@ -9,15 +9,12 @@ var black = document.getElementById('black');
 var grey = document.getElementById('grey');
 var red = document.getElementById('red');
 var green = document.getElementById('green');
-var blue = document.getElementById('blue');
-var orange = document.getElementById('orange');
-var yellow = document.getElementById('yellow');
-var purple = document.getElementById('purple');
 
 var lineWidth = 5;
 var r=2;
 
 var context = canvas.getContext('2d');
+
 
 autoSetCanvasSize(canvas);
 
@@ -26,38 +23,6 @@ listenToUser(canvas);
 
 
 
-black.onclick = function () {
-    context.strokeStyle = 'black';
-    context.fillStyle = 'black';
-};
-grey.onclick = function () {
-    context.strokeStyle = 'grey';
-    context.fillStyle = 'grey';
-};
-red.onclick = function () {
-    context.strokeStyle = 'red';
-    context.fillStyle = 'red';
-};
-green.onclick = function () {
-    context.strokeStyle = 'green';
-    context.fillStyle = 'green';
-};
-blue.onclick = function () {
-    context.strokeStyle = 'blue';
-    context.fillStyle = 'blue';
-};
-orange.onclick = function () {
-    context.strokeStyle = 'orange';
-    context.fillStyle = 'orange';
-};
-yellow.onclick = function () {
-    context.strokeStyle = 'yellow';
-    context.fillStyle = 'yellow';
-};
-purple.onclick = function () {
-    context.strokeStyle = 'purple';
-    context.fillStyle = 'purple';
-};
 
 
 
@@ -95,6 +60,44 @@ function autoSetCanvasSize(canvas) {
 
 
 function listenToUser(canvas) {
+    context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+    context.fillRect(0,0,canvas.width,canvas.height);       //给画的背景填充fillStyle里的颜色
+
+    context.fillStyle = '#000';     //将画笔中的circle变成黑色
+    black.onclick = function () {
+        context.strokeStyle = 'black';
+        context.fillStyle = 'black';
+        black.className = 'black active';
+        grey.className = 'grey';
+        red.className = 'red';
+        green.className = 'green';
+    };
+    grey.onclick = function () {
+        context.strokeStyle = 'grey';
+        context.fillStyle = 'grey';
+        black.className = 'black';
+        grey.className = 'grey active';
+        red.className = 'red';
+        green.className = 'green';
+    };
+    red.onclick = function () {
+        context.strokeStyle = 'red';
+        context.fillStyle = 'red';
+        black.className = 'black';
+        grey.className = 'grey';
+        red.className = 'red active';
+        green.className = 'green';
+    };
+    green.onclick = function () {
+        context.strokeStyle = 'green';
+        context.fillStyle = 'green';
+        black.className = 'black';
+        grey.className = 'grey';
+        red.className = 'red';
+        green.className = 'green active';
+    };
+
+
     var eraserEnabled = false;
     pen1.onclick = function () {
         eraserEnabled = false;

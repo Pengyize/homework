@@ -28,6 +28,9 @@ ul,ol{
 #canvas{
     background: white;
     display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .actions{
@@ -51,8 +54,8 @@ ul,ol{
 
 .colors{
     position: fixed;
-    top: 15px;
-    left: 194px;
+    top: 19px;
+    left: 196px;
 }
 
 .colors > button{
@@ -63,14 +66,14 @@ ul,ol{
 #clear{
     position: fixed;
     right: 15px;
-    bottom: 20px;
+    bottom: 24px;
 
 }
 
 #save{
     position: fixed;
-    right: 56px;
-    bottom: 11px;
+    right: 58px;
+    bottom: 15px;
     width: 3.2em;
     height: 3.2em;
 }
@@ -100,16 +103,4 @@ ol > li.active{
 }
 .green{
     background-color: green;
-}
-.blue{
-    background-color: blue;
-}
-.orange{
-    background-color: orange;
-}
-.yellow{
-    background-color: yellow;
-}
-.purple{
-    background-color: purple;
 }
