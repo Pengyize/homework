@@ -14,6 +14,8 @@ var green = document.getElementById('green');
 var lineWidth = 5;
 var r=2;
 
+var theColor = 'black';
+
 var context = canvas.getContext('2d');
 
 
@@ -74,6 +76,7 @@ function listenToUser(canvas) {
         grey.className = 'grey';
         red.className = 'red';
         green.className = 'green';
+        theColor = 'black';
     };
     grey.onclick = function () {
         context.strokeStyle = 'grey';
@@ -82,6 +85,7 @@ function listenToUser(canvas) {
         grey.className = 'grey active';
         red.className = 'red';
         green.className = 'green';
+        theColor = 'grey';
     };
     red.onclick = function () {
         context.strokeStyle = 'red';
@@ -90,6 +94,7 @@ function listenToUser(canvas) {
         grey.className = 'grey';
         red.className = 'red active';
         green.className = 'green';
+        theColor = 'red';
     };
     green.onclick = function () {
         context.strokeStyle = 'green';
@@ -98,6 +103,7 @@ function listenToUser(canvas) {
         grey.className = 'grey';
         red.className = 'red';
         green.className = 'green active';
+        theColor = 'green';
     };
 
 
@@ -128,6 +134,7 @@ function listenToUser(canvas) {
     clear.onclick = function () {
         context.fillStyle = '#fff';                             //使画的背景颜色变成白色
         context.fillRect(0,0,canvas.width,canvas.height);
+        context.fillStyle = theColor;
     };
 
     save.onclick = function () {
