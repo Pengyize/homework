@@ -11,8 +11,8 @@ var blue = document.getElementById('blue');
 var orange = document.getElementById('orange');
 var green = document.getElementById('green');
 
-var backWhite = document.getElementById('backWhite');
-var backWhiteTest=0;
+// var img = canvas.toDataURL("image/png");
+// document.write('<img src="'+img+'"/>');
 
 var lineWidth = 5;
 var r=2;
@@ -27,8 +27,6 @@ autoSetCanvasSize(canvas);
 
 listenToUser(canvas);
 
-// download.addEventListener('click', dlCanvas, false);
-
 
 
 
@@ -36,6 +34,9 @@ listenToUser(canvas);
 
 
 //下面是工具函数
+
+
+
 function drawLine(x1,y1,x2,y2) {
     context.beginPath();
     context.moveTo(x1,y1);
@@ -56,6 +57,7 @@ function autoSetCanvasSize(canvas) {
     window.onresize = function () {
         setCanvasSize()
     };
+    addWhiteBackground();
 
     function setCanvasSize() {
         var pageWidth = document.documentElement.clientWidth;
@@ -63,32 +65,14 @@ function autoSetCanvasSize(canvas) {
         canvas.width = pageWidth;
         canvas.height = pageHeight;
     }
+    function addWhiteBackground() {
+        context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+        context.fillRect(0,0,canvas.width,canvas.height);
+    }
 }
-
-// function dlCanvas() {
-//     var url = canvas.toDataURL('image/png');
-//     download.href = url;
-//     download.target = '_blank';
-//     download.download = '画';
-// }
 
 
 function listenToUser(canvas) {
-
-    backWhite.onclick = function () {
-        if(backWhiteTest === 0){
-            context.fillStyle = '#fff';                             //使画的背景颜色变成白色
-            context.fillRect(0,0,canvas.width,canvas.height);
-            backWhite.classList.add('active');
-            backWhiteTest=1;
-            context.fillStyle = theColor;
-        }else{
-            backWhite.classList.remove('active');
-            backWhiteTest=0;
-            context.clearRect(0,0,canvas.width,canvas.height);
-            context.fillStyle = theColor;
-        }
-    };
 
     black.onclick = function () {
         context.strokeStyle = 'black';
@@ -153,19 +137,24 @@ function listenToUser(canvas) {
 
     };
     clear.onclick = function () {
-        if(backWhiteTest === 1){
-            context.fillStyle = '#fff';                             //使画的背景颜色变成白色
-            context.fillRect(0,0,canvas.width,canvas.height);
-        }else{
-            context.clearRect(0,0,canvas.width,canvas.height);
-        }
+        context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+        context.fillRect(0,0,canvas.width,canvas.height);
         context.fillStyle = theColor;
     };
-    // download.onclick = function () {
-    //     var url = canvas.toDataURL('image/png');
-    //     download.href = url;
-    //     download.download = '画';
-    // };
+    download.onclick = function () {
+        var MIME_TYPE = "image/png";
+
+        var imgURL = canvas.toDataURL(MIME_TYPE);
+
+        var dlLink = document.createElement('a');
+        dlLink.download = '画';
+        dlLink.href = imgURL;
+        dlLink.dataset.downloadurl = [MIME_TYPE, dlLink.download, dlLink.href].join(':');
+
+        document.body.appendChild(dlLink);
+        dlLink.click();
+        document.body.removeChild(dlLink);
+    };
 
 
 

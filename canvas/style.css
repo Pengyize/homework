@@ -66,24 +66,6 @@ a{
     border-radius: 50%;
 }
 
-
-.backgroundColors{
-    position: fixed;
-    bottom: 0;
-    left: 15px;
-}
-
-.backgroundColors > li {
-    border: 1px solid #666;
-    border-radius: 4px;
-    width: 30px;
-    height: 30px;
-}
-
-.backgroundColors.active{
-    box-shadow: 0 0 12px rgba(0,0,0,1);
-}
-
 #clear{
     position: fixed;
     right: 15px;
@@ -91,13 +73,13 @@ a{
 
 }
 
-/*#download > svg{*/
-    /*position: fixed;*/
-    /*right: 58px;*/
-    /*bottom: 15px;*/
-    /*width: 3.2em;*/
-    /*height: 3.2em;*/
-/*}*/
+#download > svg{
+    position: fixed;
+    right: 58px;
+    bottom: 15px;
+    width: 3.2em;
+    height: 3.2em;
+}
 
 
 
