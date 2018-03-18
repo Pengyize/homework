@@ -27,7 +27,7 @@ autoSetCanvasSize(canvas);
 
 listenToUser(canvas);
 
-// download.addEventListener('click', dlCanvas, false);
+download.addEventListener('click', dlCanvas, false);
 
 
 
@@ -65,12 +65,12 @@ function autoSetCanvasSize(canvas) {
     }
 }
 
-// function dlCanvas() {
-//     var url = canvas.toDataURL('image/png');
-//     download.href = url;
-//     download.target = '_blank';
-//     download.download = '画';
-// }
+function dlCanvas() {
+    var url = canvas.toDataURL('image/png');
+    download.href = url;
+    download.target = '_blank';
+    download.download = '画';
+}
 
 
 function listenToUser(canvas) {
@@ -140,7 +140,7 @@ function listenToUser(canvas) {
     pen2.onclick = function () {
         eraserEnabled = false;
         lineWidth = 10;
-        r=5;
+        r=4;
         pen2.classList.add('active');
         pen1.classList.remove('active');
         eraser.classList.remove('active');
@@ -161,11 +161,11 @@ function listenToUser(canvas) {
         }
         context.fillStyle = theColor;
     };
-    download.onclick = function () {
-        var url = canvas.toDataURL('image/png');
-        download.href = url;
-        download.download = '画';
-    };
+    // download.onclick = function () {
+    //     var url = canvas.toDataURL('image/png');
+    //     download.href = url;
+    //     download.download = '画';
+    // };
 
 
 
