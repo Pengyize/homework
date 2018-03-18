@@ -8,7 +8,7 @@ var save = document.getElementById('save');
 
 var black = document.getElementById('black');
 var blue = document.getElementById('blue');
-var red = document.getElementById('red');
+var orange = document.getElementById('orange');
 var green = document.getElementById('green');
 
 var lineWidth = 5;
@@ -74,7 +74,7 @@ function listenToUser(canvas) {
         context.fillStyle = 'black';
         black.className = 'black active';
         blue.className = 'blue';
-        red.className = 'red';
+        orange.className = 'orange';
         green.className = 'green';
         theColor = 'black';
     };
@@ -83,25 +83,25 @@ function listenToUser(canvas) {
         context.fillStyle = '#9de7fb';
         black.className = 'black';
         blue.className = 'blue active';
-        red.className = 'red';
+        orange.className = 'orange';
         green.className = 'green';
         theColor = '#9de7fb';
     };
-    red.onclick = function () {
-        context.strokeStyle = '#ef6e78';
-        context.fillStyle = '#ef6e78';
+    orange.onclick = function () {
+        context.strokeStyle = '#f6b451';
+        context.fillStyle = '#f6b451';
         black.className = 'black';
         blue.className = 'blue';
-        red.className = 'red active';
+        orange.className = 'orange active';
         green.className = 'green';
-        theColor = '#ef6e78';
+        theColor = '#f6b451';
     };
     green.onclick = function () {
         context.strokeStyle = '#85e353';
         context.fillStyle = '#85e353';
         black.className = 'black';
         blue.className = 'blue';
-        red.className = 'red';
+        orange.className = 'orange';
         green.className = 'green active';
         theColor = '#85e353';
     };

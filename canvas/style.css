@@ -103,8 +103,8 @@ ol > li.blue.active{
 ol > li.green.active{
     box-shadow: 0 0 12px rgba(84,167,40,1);
 }
-ol > li.red.active{
-    box-shadow: 0 0 12px rgba(188,41,53,1);
+ol > li.orange.active{
+    box-shadow: 0 0 12px rgba(196,131,32,1);
 }
 
 .black{
@@ -113,8 +113,8 @@ ol > li.red.active{
 .blue{
     background-color: #9de7fb;
 }
-.red{
-    background-color: #ef6e78;
+.orange{
+    background-color: #f6b451;
 }
 .green{
     background-color: #85e353;
