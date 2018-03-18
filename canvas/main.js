@@ -21,7 +21,8 @@ var context = canvas.getContext('2d');
 
 autoSetCanvasSize(canvas);
 
-
+context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+context.fillRect(0,0,canvas.width,canvas.height);
 
 listenToUser(canvas);
 
@@ -61,8 +62,7 @@ function autoSetCanvasSize(canvas) {
         canvas.width = pageWidth;
         canvas.height = pageHeight;
     }
-    context.fillStyle = '#fff';                             //使画的背景颜色变成白色
-    context.fillRect(0,0,canvas.width,canvas.height);
+
 
 }
 
@@ -137,7 +137,6 @@ function listenToUser(canvas) {
         context.fillRect(0,0,canvas.width,canvas.height);
         context.fillStyle = theColor;
     };
-
     save.onclick = function () {
         var url = canvas.toDataURL('image/png');
         save.href = url;
