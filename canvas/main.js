@@ -140,8 +140,6 @@ function listenToUser(canvas) {
     save.onclick = function () {
         var url = canvas.toDataURL('image/png');
         save.href = url;
-        save.download = '画';
-        save.target = '_blank';
     };
 
 
