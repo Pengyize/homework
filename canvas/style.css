@@ -12,6 +12,10 @@ ul,ol{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .clearfix{
     content: "";
     display: block;
@@ -70,7 +74,7 @@ ul,ol{
 
 }
 
-#save{
+#save > svg{
     position: fixed;
     right: 58px;
     bottom: 15px;
