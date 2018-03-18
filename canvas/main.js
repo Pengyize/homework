@@ -178,6 +178,7 @@ function listenToUser(canvas) {
         black.click();
         backWhiteTest = 0;
         backWhite.classList.remove('active');
+        context.clearRect(0,0,canvas.width,canvas.height);
     };
 
     // download.onclick = function () {
