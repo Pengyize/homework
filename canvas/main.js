@@ -27,7 +27,7 @@ autoSetCanvasSize(canvas);
 
 listenToUser(canvas);
 
-download.addEventListener('click', dlCanvas, false);
+// download.addEventListener('click', dlCanvas, false);
 
 
 
@@ -65,12 +65,12 @@ function autoSetCanvasSize(canvas) {
     }
 }
 
-function dlCanvas() {
-    var url = canvas.toDataURL('image/png');
-    download.href = url;
-    download.target = '_blank';
-    download.download = '画';
-}
+// function dlCanvas() {
+//     var url = canvas.toDataURL('image/png');
+//     download.href = url;
+//     download.target = '_blank';
+//     download.download = '画';
+// }
 
 
 function listenToUser(canvas) {
