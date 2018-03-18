@@ -7,7 +7,7 @@ var clear =document.getElementById('clear');
 var save = document.getElementById('save');
 
 var black = document.getElementById('black');
-var grey = document.getElementById('grey');
+var blue = document.getElementById('blue');
 var red = document.getElementById('red');
 var green = document.getElementById('green');
 
@@ -73,37 +73,37 @@ function listenToUser(canvas) {
         context.strokeStyle = 'black';
         context.fillStyle = 'black';
         black.className = 'black active';
-        grey.className = 'grey';
+        blue.className = 'blue';
         red.className = 'red';
         green.className = 'green';
         theColor = 'black';
     };
-    grey.onclick = function () {
-        context.strokeStyle = 'grey';
-        context.fillStyle = 'grey';
+    blue.onclick = function () {
+        context.strokeStyle = '#9de7fb';
+        context.fillStyle = '#9de7fb';
         black.className = 'black';
-        grey.className = 'grey active';
+        blue.className = 'blue active';
         red.className = 'red';
         green.className = 'green';
-        theColor = 'grey';
+        theColor = '#9de7fb';
     };
     red.onclick = function () {
-        context.strokeStyle = 'red';
-        context.fillStyle = 'red';
+        context.strokeStyle = '#ef6e78';
+        context.fillStyle = '#ef6e78';
         black.className = 'black';
-        grey.className = 'grey';
+        blue.className = 'blue';
         red.className = 'red active';
         green.className = 'green';
-        theColor = 'red';
+        theColor = '#ef6e78';
     };
     green.onclick = function () {
-        context.strokeStyle = 'green';
-        context.fillStyle = 'green';
+        context.strokeStyle = '#85e353';
+        context.fillStyle = '#85e353';
         black.className = 'black';
-        grey.className = 'grey';
+        blue.className = 'blue';
         red.className = 'red';
         green.className = 'green active';
-        theColor = 'green';
+        theColor = '#85e353';
     };
 
 

@@ -93,18 +93,29 @@ ol > li {
 }
 
 ol > li.active{
-    box-shadow: 0 0 8px rgba(0,0,0,1);
+    box-shadow: 0 0 12px rgba(0,0,0,1);
+}
+
+ol > li.blue.active{
+    box-shadow: 0 0 12px rgba(57,166,193,1);
+}
+
+ol > li.green.active{
+    box-shadow: 0 0 12px rgba(84,167,40,1);
+}
+ol > li.red.active{
+    box-shadow: 0 0 12px rgba(188,41,53,1);
 }
 
 .black{
     background-color: black;
 }
-.grey{
-    background-color: grey;
+.blue{
+    background-color: #9de7fb;
 }
 .red{
-    background-color: red;
+    background-color: #ef6e78;
 }
 .green{
-    background-color: green;
+    background-color: #85e353;
 }
