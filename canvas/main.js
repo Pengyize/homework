@@ -11,6 +11,8 @@ var blue = document.getElementById('blue');
 var orange = document.getElementById('orange');
 var green = document.getElementById('green');
 
+var backWhite = document.getElementById('backWhite');
+var backWhiteTest = 0;
 // var img = canvas.toDataURL("image/png");
 // document.write('<img src="'+img+'"/>');
 
@@ -24,8 +26,6 @@ var context = canvas.getContext('2d');
 
 
 autoSetCanvasSize(canvas);
-
-addWhiteBackground();
 
 listenToUser(canvas);
 
@@ -60,6 +60,7 @@ function autoSetCanvasSize(canvas) {
         setCanvasSize()
     };
 
+
     function setCanvasSize() {
         var pageWidth = document.documentElement.clientWidth;
         var pageHeight = document.documentElement.clientHeight;
@@ -69,12 +70,30 @@ function autoSetCanvasSize(canvas) {
 
 }
 
-function addWhiteBackground() {
-    context.fillStyle = '#fff';                             //使画的背景颜色变成白色
-    context.fillRect(0,0,canvas.width,canvas.height);
-}
+// function dlCanvas() {
+//     var url = canvas.toDataURL('image/png');
+//     download.href = url;
+//     download.target = '_blank';
+//     download.download = '画';
+// }
+
 
 function listenToUser(canvas) {
+
+    backWhite.onclick = function () {
+        if(backWhiteTest === 0){
+            context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+            context.fillRect(0,0,canvas.width,canvas.height);
+            backWhite.classList.add('active');
+            backWhiteTest=1;
+            context.fillStyle = theColor;
+        }else{
+            backWhite.classList.remove('active');
+            backWhiteTest=0;
+            context.clearRect(0,0,canvas.width,canvas.height);
+            context.fillStyle = theColor;
+        }
+    };
 
     black.onclick = function () {
         context.strokeStyle = 'black';
@@ -139,8 +158,12 @@ function listenToUser(canvas) {
 
     };
     clear.onclick = function () {
-        context.fillStyle = '#fff';                             //使画的背景颜色变成白色
-        context.fillRect(0,0,canvas.width,canvas.height);
+        if(backWhiteTest === 1){
+            context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+            context.fillRect(0,0,canvas.width,canvas.height);
+        }else{
+            context.clearRect(0,0,canvas.width,canvas.height);
+        }
         context.fillStyle = theColor;
     };
     download.onclick = function () {
