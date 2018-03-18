@@ -175,10 +175,11 @@ function listenToUser(canvas) {
         dlLink.download = '画';
         dlLink.href = imgURL;
         dlLink.dataset.downloadurl = [MIME_TYPE, dlLink.download, dlLink.href].join(':');
-
+        dlLink.target = '_blank';
         document.body.appendChild(dlLink);
         dlLink.click();
         document.body.removeChild(dlLink);
+        console.log(123);
     };
 
 
