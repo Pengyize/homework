@@ -96,7 +96,7 @@ h2,h3,h4,h5,h6{
     padding-top: 2px;
     padding-bottom: 5px;
     font-size: 26px;
-    font-family: "Arial Black";
+    font-family: "Arial Black", serif;
 }
 
 .topNavBar .logo .rs{
@@ -117,7 +117,7 @@ h2,h3,h4,h5,h6{
 
 .banner .mask{
     height: 515px;
-    background: rgba(7%,7%,7%,0.7);
+    background: rgba(17%,17%,17%,0.8);
 }
 
 .userCard{
