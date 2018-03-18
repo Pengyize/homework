@@ -25,6 +25,8 @@ var context = canvas.getContext('2d');
 
 autoSetCanvasSize(canvas);
 
+addWhiteBackground();
+
 listenToUser(canvas);
 
 
@@ -57,7 +59,6 @@ function autoSetCanvasSize(canvas) {
     window.onresize = function () {
         setCanvasSize()
     };
-    addWhiteBackground();
 
     function setCanvasSize() {
         var pageWidth = document.documentElement.clientWidth;
@@ -65,12 +66,13 @@ function autoSetCanvasSize(canvas) {
         canvas.width = pageWidth;
         canvas.height = pageHeight;
     }
-    function addWhiteBackground() {
-        context.fillStyle = '#fff';                             //使画的背景颜色变成白色
-        context.fillRect(0,0,canvas.width,canvas.height);
-    }
+
 }
 
+function addWhiteBackground() {
+    context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+    context.fillRect(0,0,canvas.width,canvas.height);
+}
 
 function listenToUser(canvas) {
 
