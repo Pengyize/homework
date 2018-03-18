@@ -91,7 +91,7 @@ a{
 
 }
 
-#download{
+#download > svg{
     position: fixed;
     right: 58px;
     bottom: 15px;

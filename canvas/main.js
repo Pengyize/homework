@@ -5,7 +5,6 @@ var pen2 = document.getElementById('pen2');
 var eraser = document.getElementById('eraser');
 var clear =document.getElementById('clear');
 var download = document.getElementById('download');
-var a = document.getElementById('save');
 
 var black = document.getElementById('black');
 var blue = document.getElementById('blue');
@@ -28,7 +27,7 @@ autoSetCanvasSize(canvas);
 
 listenToUser(canvas);
 
-
+download.addEventListener('click', dlCanvas, false);
 
 
 
@@ -66,14 +65,15 @@ function autoSetCanvasSize(canvas) {
     }
 }
 
-
+function dlCanvas() {
+    var url = canvas.toDataURL('image/png');
+    download.href = url;
+    download.target = '_blank';
+    download.download = '画';
+}
 
 
 function listenToUser(canvas) {
-    // context.fillStyle = theColor;     //将画笔中的circle变成黑色
-    // context.strokeStyle = theColor;
-    // context.fillStyle = 'black';
-    // context.strokeStyle = 'black';
 
     backWhite.onclick = function () {
         if(backWhiteTest === 0){
@@ -161,15 +161,7 @@ function listenToUser(canvas) {
         }
         context.fillStyle = theColor;
     };
-    download.onclick = function () {
-        var url = canvas.toDataURL('image/png');
-        a.href = url;
-        a.target = '_blank';
-        a.download = '画';
-        a.click();
-        // context.fillStyle = theColor;     //将画笔中的circle变成黑色
-        // context.strokeStyle = theColor;
-    };
+
 
 
     var using = false;
