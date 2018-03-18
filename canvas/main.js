@@ -4,15 +4,20 @@ var pen1 = document.getElementById('pen1');
 var pen2 = document.getElementById('pen2');
 var eraser = document.getElementById('eraser');
 var clear =document.getElementById('clear');
-var save = document.getElementById('save');
+var download = document.getElementById('download');
+var a = document.getElementById('save');
 
 var black = document.getElementById('black');
 var blue = document.getElementById('blue');
 var orange = document.getElementById('orange');
 var green = document.getElementById('green');
 
+var backWhite = document.getElementById('backWhite');
+var backWhiteTest=0;
+
 var lineWidth = 5;
 var r=2;
+
 
 var theColor = 'black';
 
@@ -20,9 +25,6 @@ var context = canvas.getContext('2d');
 
 
 autoSetCanvasSize(canvas);
-
-context.fillStyle = '#fff';                             //使画的背景颜色变成白色
-context.fillRect(0,0,canvas.width,canvas.height);
 
 listenToUser(canvas);
 
@@ -62,13 +64,31 @@ function autoSetCanvasSize(canvas) {
         canvas.width = pageWidth;
         canvas.height = pageHeight;
     }
-
-
 }
 
 
+
+
 function listenToUser(canvas) {
-    context.fillStyle = theColor;     //将画笔中的circle变成黑色
+    // context.fillStyle = theColor;     //将画笔中的circle变成黑色
+    // context.strokeStyle = theColor;
+    // context.fillStyle = 'black';
+    // context.strokeStyle = 'black';
+
+    backWhite.onclick = function () {
+        if(backWhiteTest === 0){
+            context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+            context.fillRect(0,0,canvas.width,canvas.height);
+            backWhite.classList.add('active');
+            backWhiteTest=1;
+            context.fillStyle = theColor;
+        }else{
+            backWhite.classList.remove('active');
+            backWhiteTest=0;
+            context.clearRect(0,0,canvas.width,canvas.height);
+            context.fillStyle = theColor;
+        }
+    };
 
     black.onclick = function () {
         context.strokeStyle = 'black';
@@ -133,13 +153,22 @@ function listenToUser(canvas) {
 
     };
     clear.onclick = function () {
-        context.fillStyle = '#fff';                             //使画的背景颜色变成白色
-        context.fillRect(0,0,canvas.width,canvas.height);
+        if(backWhiteTest === 1){
+            context.fillStyle = '#fff';                             //使画的背景颜色变成白色
+            context.fillRect(0,0,canvas.width,canvas.height);
+        }else{
+            context.clearRect(0,0,canvas.width,canvas.height);
+        }
         context.fillStyle = theColor;
     };
-    save.onclick = function () {
+    download.onclick = function () {
         var url = canvas.toDataURL('image/png');
-        save.href = url;
+        a.href = url;
+        a.target = '_blank';
+        a.download = '画';
+        a.click();
+        // context.fillStyle = theColor;     //将画笔中的circle变成黑色
+        // context.strokeStyle = theColor;
     };
 
 
