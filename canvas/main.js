@@ -68,7 +68,7 @@ function autoSetCanvasSize(canvas) {
 
 
 function listenToUser(canvas) {
-    context.fillStyle = '#000';     //将画笔中的circle变成黑色
+    context.fillStyle = theColor;     //将画笔中的circle变成黑色
 
     black.onclick = function () {
         context.strokeStyle = 'black';
