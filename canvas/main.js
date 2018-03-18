@@ -155,7 +155,6 @@ function listenToUser(canvas) {
         eraser.classList.add('active');
         pen1.classList.remove('active');
         pen2.classList.remove('active');
-
     };
     clear.onclick = function () {
         if(backWhiteTest === 1){
@@ -167,20 +166,35 @@ function listenToUser(canvas) {
         context.fillStyle = theColor;
     };
     download.onclick = function () {
-        var MIME_TYPE = "image/png";
-
-        var imgURL = canvas.toDataURL(MIME_TYPE);
-
-        var dlLink = document.createElement('a');
-        dlLink.download = '画';
-        dlLink.href = imgURL;
-        dlLink.dataset.downloadurl = [MIME_TYPE, dlLink.download, dlLink.href].join(':');
-        dlLink.target = '_blank';
-        document.body.appendChild(dlLink);
-        dlLink.click();
-        document.body.removeChild(dlLink);
-        console.log(123);
+        var imgURL = canvas.toDataURL('image/png');
+        var a = document.createElement('a');
+        document.body.appendChild(a);
+        a.href = imgURL;
+        a.dataset.downloadurl = ['image/png', a.download, a.href].join(':');
+        a.target = '_blank';
+        a.download = '画';
+        a.click();
+        document.body.removeChild(a);
+        black.click();
+        backWhiteTest = 0;
+        backWhite.classList.remove('active');
     };
+
+    // download.onclick = function () {
+    //     var MIME_TYPE = "image/png";
+    //
+    //     var imgURL = canvas.toDataURL(MIME_TYPE);
+    //
+    //     var dlLink = document.createElement('a');
+    //     dlLink.download = '画';
+    //     dlLink.href = imgURL;
+    //     dlLink.dataset.downloadurl = [MIME_TYPE, dlLink.download, dlLink.href].join(':');
+    //     dlLink.target = '_blank';
+    //     document.body.appendChild(dlLink);
+    //     dlLink.click();
+    //     document.body.removeChild(dlLink);
+    //     console.log(123);
+    // };
 
 
 
@@ -225,7 +239,6 @@ function listenToUser(canvas) {
         canvas.ontouchend = function () {
             using = false;
         };
-
 
     }else{
         //非触屏设备
