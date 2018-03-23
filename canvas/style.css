@@ -43,14 +43,12 @@ a{
     left: 2px;
     padding: 15px 20px 20px 10px;
 }
-
 .actions svg{
     width: 2em;
     height: 2em;
     transition: all 0.3s;
     margin: 0 8px;
 }
-
 .actions svg.active{
     transform: scale(1.4);
 }
@@ -61,7 +59,6 @@ a{
     top: 19px;
     left: 196px;
 }
-
 .colors > li{
     border-radius: 50%;
 }
@@ -72,14 +69,12 @@ a{
     bottom: 0;
     left: 15px;
 }
-
 .backgroundColors > li {
     border: 1px solid #666;
     border-radius: 4px;
     width: 30px;
     height: 30px;
 }
-
 .backgroundColors.active{
     box-shadow: 0 0 12px rgba(0,0,0,1);
 }
@@ -99,8 +94,6 @@ a{
     height: 3.2em;
 }
 
-
-
 ol > li {
     width: 24px;
     height: 24px;
@@ -109,15 +102,12 @@ ol > li {
     float: left;
     transition: all 0.3s;
 }
-
 ol > li.active{
     box-shadow: 0 0 12px rgba(0,0,0,1);
 }
-
 ol > li.blue.active{
     box-shadow: 0 0 12px rgba(57,166,193,1);
 }
-
 ol > li.green.active{
     box-shadow: 0 0 12px rgba(84,167,40,1);
 }
