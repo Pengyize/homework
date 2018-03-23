@@ -1,2 +1,4 @@
-var siteWelcome = document.getElementById('siteWelcome');
-siteWelcome.classList.remove('active');
+setTimeout(function () {
+    var siteWelcome = document.getElementById('siteWelcome');
+    siteWelcome.classList.remove('active');
+}, 3000);
