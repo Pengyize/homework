@@ -221,6 +221,11 @@ h2,h3,h4,h5,h6{
     height: 26px;
 }
 
+.userCard .jian{
+    width: 25px;
+    height: 25px;
+}
+
 body > main{
     margin-top: -320px;
 }

@@ -1,11 +1,15 @@
-a = {
-    '0':0,
-    '1':1,
-    '2':2,
-    '3':3,
-    '4':4,
-    'length':5
-};
+var a = [ ,2,3];
 
-let i=0;
-alert(a['i']);
+for(var i=0;i<a.length;i++){
+    console.log(a[i]);                          //undefined   2   3
+}
+
+a.forEach(function (x, i) {
+    console.log(i + ':' + x);                  // 1:2   2:3
+});
+
+a = [undefined,2,3];
+
+a.forEach(function (x, i) {
+    console.log(i + ':' + x);                  // 0:undefined   1:2   2:3
+});
