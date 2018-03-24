@@ -28,14 +28,14 @@ for(let i=0;i<  liTags.length;i++){            //for循环，这样就能同时�
     };
 }
 
-let aTags = document.querySelectorAll('nav.menu > ul > li > a');
-for(let i=0;i<aTags.length;i++) {
-    aTags[i].onclick = function (x) {
-        x.preventDefault();
-        let a = x.currentTarget;
-        let href = a.getAttribute('href');
-        let element = document.querySelector(href);        //'#siteAbout'
-        let top = element.offsetTop;
-        window.scrollTo(0,top-120);
+    let aTags = document.querySelectorAll('nav.menu > ul > li > a');
+    for(let i=0;i<aTags.length;i++) {
+        aTags[i].onclick = function (x) {
+            x.preventDefault();
+            let a = x.currentTarget;
+            let href = a.getAttribute('href');
+            let element = document.querySelector(href);        //'#siteAbout'
+            let top = element.offsetTop;
+            window.scrollTo(0,top-120);
+        }
     }
-}

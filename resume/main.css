@@ -52,7 +52,7 @@ h2,h3,h4,h5,h6{
     top:0;
     left: 0;
     width: 100%;
-    transition: all 0.5s;
+    transition: all .5s;
 }
 .topNavBar a{
     float: left;
@@ -118,16 +118,11 @@ h2,h3,h4,h5,h6{
     display: block;
     animation: subMenuSlide .4s;
 }
-/*.topNavBar li.leave .subMenu{*/
-    /*display: block;*/
-    /*animation: subMenuLeave .4s;*/
-/*}*/
 .topNavBar .subMenu li{
     white-space: nowrap;
 }
 .topNavBar .subMenu li a{
     padding: 6px 0;
-    transition: all 0.2s;
 }
 .topNavBar .menu .subMenu li a:hover{
     color: #e97579;
@@ -141,15 +136,6 @@ h2,h3,h4,h5,h6{
         margin-right: 0;
     }
 }
-/*@keyframes subMenuLeave {*/
-    /*0%{*/
-        /*margin-right: 0;*/
-    /*}*/
-    /*100%{*/
-        /*margin-right: 100%;*/
-        /*opacity: 0;*/
-    /*}*/
-/*}*/
 .topNavBar .logo{
     padding-top: 2px;
     padding-bottom: 5px;
