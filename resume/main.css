@@ -50,40 +50,106 @@ h2,h3,h4,h5,h6{
     padding: 22px 0;
     position: fixed;
     top:0;
-    left: 0px;
+    left: 0;
     width: 100%;
+    transition: all 0.5s;
 }
-.topNavBar  a{
+.topNavBar a{
     float: left;
 }
-.topNavBar  nav{
+.topNavBar nav{
     float: right;
 
 }
-.topNavBar  nav > ul{
+.topNavBar nav > ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.topNavBar  nav > ul > li{
+.topNavBar nav > ul > li{
     float: left;
     margin-right: 19px;
     margin-left: 19px;
+    position: relative;
 }
-.topNavBar  nav > ul > li > a {
+.topNavBar nav > ul > li > a {
     color: #c0c2c6;
     font-size: 14px;
     font-weight: bold;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     padding-top: 10px;
-    padding-bottom: 6px;
+    padding-bottom: 4px;
     display: block;
     transition: 0.5s;
+    position: relative;
 }
-.topNavBar  nav > ul > li > a:hover{
-    border-bottom: 3px solid #f85961;
+.topNavBar nav > ul > li.active > a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;  /*bottom: 0;不能这样写*/
+    left: 0;
+    width: 100%;
+    background: #f85961;
+    height: 3px;
+    animation: menuBorder 0.4s;
 }
+@keyframes menuBorder {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.topNavBar .subMenu{
+    color: #545a65;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    padding: 12px 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+
+}
+.topNavBar li.active .subMenu{
+    display: block;
+    animation: subMenuSlide .4s;
+}
+/*.topNavBar li.leave .subMenu{*/
+    /*display: block;*/
+    /*animation: subMenuLeave .4s;*/
+/*}*/
+.topNavBar .subMenu li{
+    white-space: nowrap;
+}
+.topNavBar .subMenu li a{
+    padding: 6px 0;
+    transition: all 0.2s;
+}
+.topNavBar .menu .subMenu li a:hover{
+    color: #e97579;
+}
+@keyframes subMenuSlide {
+    0%{
+        margin-right: 100%;
+        opacity: 0;
+    }
+    100%{
+        margin-right: 0;
+    }
+}
+/*@keyframes subMenuLeave {*/
+    /*0%{*/
+        /*margin-right: 0;*/
+    /*}*/
+    /*100%{*/
+        /*margin-right: 100%;*/
+        /*opacity: 0;*/
+    /*}*/
+/*}*/
 .topNavBar .logo{
     padding-top: 2px;
     padding-bottom: 5px;
@@ -97,6 +163,15 @@ h2,h3,h4,h5,h6{
 .topNavBar .logo .card{
 
     color: #9a9da2;
+}
+.topNavBar.sticky nav > ul > li > a{
+    color: #5d6470;
+}
+.topNavBar.sticky{
+    background: white;
+    padding: 10px 0;
+    z-index: 1;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
 .banner{
@@ -180,7 +255,7 @@ h2,h3,h4,h5,h6{
     padding: 10px 0;
     border-radius: 50%;
     margin: 14px;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 .userCard > footer.media > a:hover{
     background-color: #d15c5f;

@@ -12,7 +12,7 @@
     bottom: 0;
     right: 0;
     margin: auto;
-    animation: s 1.5s linear infinite;
+    animation: loadingCircle 1.5s linear infinite;
 }
 
 .loading::after{
@@ -20,7 +20,7 @@
 
 }
 
-@keyframes s {
+@keyframes loadingCircle {
     0%{
         width: 0;
         height: 0;
