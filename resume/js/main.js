@@ -26,6 +26,12 @@ for(let i=0;i<  liTags.length;i++){                 //for循环，这样就能�
 }
 
 let aTags = document.querySelectorAll('nav.menu > ul > li > a');
+function animate(time) {
+    requestAnimationFrame(animate);
+    TWEEN.update(time);
+}
+requestAnimationFrame(animate);
+
 for(let i=0;i<aTags.length;i++) {
     aTags[i].onclick = function (x) {
         x.preventDefault();
@@ -34,24 +40,19 @@ for(let i=0;i<aTags.length;i++) {
         let element = document.querySelector(href);        //'#siteAbout'
         let top = element.offsetTop;
 
-        let n = 25; //动多少次
-        let duration = 500 / n; //每次持续的时间
+
         let currentTop = window.scrollY;  //当前位置
         let targetTop = top-120;    //目标位置
-        let distance = (targetTop - currentTop) / n;    //每次动的距离
-        console.log(currentTop);
 
 
-        console.log(distance);
-        let i = 0;
-        let moveToAnchor = setInterval(() => {
-            if(i === 25){
-                window.clearInterval(moveToAnchor);
-                return;
-            }
-            i++;
-            window.scrollTo(0,currentTop + distance * i); //两个参数分别是x和y，浏览器横坐标的值，纵坐标的值
-        },duration);
+        var coords = { y: currentTop};
+        var tween = new TWEEN.Tween(coords)
+            .to({ y: targetTop}, 500)
+            .easing(TWEEN.Easing.Cubic.Out)
+            .onUpdate(function() {
+                window.scrollTo(0,coords.y);
+            })
+            .start();
 
     }
 }

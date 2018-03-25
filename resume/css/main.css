@@ -162,7 +162,7 @@ h2,h3,h4,h5,h6{
 
 .banner{
     height: 515px;
-    background: center url("./img/rs-cover-2-2-1-1.jpg");
+    background: center url("../img/rs-cover-2-2-1-1.jpg");
     background-size: cover;
 }
 .banner .mask{
