@@ -47,7 +47,7 @@ for(let i=0;i<aTags.length;i++) {
 
         var coords = { y: currentTop};
         var tween = new TWEEN.Tween(coords)
-            .to({ y: targetTop}, 500)
+            .to({ y: targetTop}, 600)
             .easing(TWEEN.Easing.Cubic.Out)
             .onUpdate(function() {
                 window.scrollTo(0,coords.y);
