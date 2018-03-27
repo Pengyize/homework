@@ -1,19 +1,7 @@
-.test{
-    position: relative;
+.triangle{
+    width:0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-width: 0;
+    border-right-color: red;
 }
-
-.subMenu{
-    color: #545a65;
-    display: block;
-    position: absolute;
-    right: 110px;
-    top: 0;
-    background: white;
-    padding: 22px 30px;
-    box-shadow: 0 0 5px rgba(0,0,0,.5);
-    border: 1px solid red;
-}
-
-/*.topNavBar .subMenu li{*/
-    /*white-space: nowrap;*/
-/*}*/
