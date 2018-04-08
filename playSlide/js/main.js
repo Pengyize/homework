@@ -66,13 +66,13 @@ function playSlide() {
 
 let timer = setInterval(function () {
     goToSlide((current+1))
-},1700);
+},2000);
 $('.container').on('mouseenter',function () {
     window.clearInterval(timer);
 }).on('mouseleave',function () {
     timer = setInterval(function () {
         goToSlide((current+1))
-    },1700);
+    },2000);
 });
 
 document.addEventListener('visibilitychange',function () {
@@ -81,7 +81,7 @@ document.addEventListener('visibilitychange',function () {
     }else{
         timer = setInterval(function () {
             goToSlide((current+1))
-        },1700);
+        },2000);
     }
 });
 
