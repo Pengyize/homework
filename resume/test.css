@@ -1,34 +1,27 @@
-.popover{
-    border: 1px solid red;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    white-space: nowrap;
-    padding: 10px;
-    margin-left: 10px;
-    background: white;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.popover::before{
-    position: absolute;
-    right: 100%;
-    top: 5px;
-    border: 10px solid transparent;
-    border-right-color: red;
+body{
+    font-size: 16px;
+}
+
+.clearfix::after{
     content: "";
-}
-.popover::after{
-    position: absolute;
-    right: 100%;
-    top: 5px;
-    border: 10px solid transparent;
-    border-right-color: white;
-    content: "";
-    margin-left: -1px;
+    clear: both;
+    display: block;
 }
 
-.wrapper{
-    position: relative;
-    display: inline-block;
+.child{
+    background: #ddd;
+    width: 4rem;
+    height: 2rem;
+    margin: 0.5rem 0.5rem;
+    float: left;
 }
 
+/*.father{*/
+    /*display: flex;               //让它变成一个弹性盒*/
+    /*justify-content: center;     //水平居中*/
+/*}*/
