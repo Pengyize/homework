@@ -7,6 +7,7 @@
     padding: 10px;
     margin-left: 10px;
     background: white;
+    display: none;
 }
 
 .popover::before{
@@ -24,7 +25,7 @@
     border: 10px solid transparent;
     border-right-color: white;
     content: "";
-    margin-left: -1px;
+    margin-left: -3px;
 }
 
 .wrapper{
@@ -32,3 +33,33 @@
     display: inline-block;
 }
 
+.red.active{
+    background: red;
+}
+.blue.active{
+    background: blue;
+}
+.green.active{
+    background: green;
+}
+.yellow.active{
+    background: yellow;
+}
+.orange.active{
+    background: orange;
+}
+.purple.active{
+    background: purple;
+}
+.purple{
+    height: 100px;
+}
+.red{
+    width: 200px;
+}
+div{
+    border: 1px solid black;
+    padding: 10px;
+    transition: all 1s;
+    border-radius: 50%;
+}

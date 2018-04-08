@@ -281,7 +281,7 @@ body > main .downloadResume{
     transition: box-shadow 0.3s;
 }
 body > main .downloadResume:hover{
-    box-shadow: 0px 6px 16px 1px rgba(102,102,102,0.4);
+    box-shadow: 0 6px 16px 1px rgba(102,102,102,0.4);
 }
 body > main .selfIntroduction{
     max-width: 940px;
