@@ -6,11 +6,17 @@ let $previous = $('#previous');
 
 makeFakeSlide();
 
-$slides.css({transform:'translateX(-400px)'});
+$slides.css({transform:'translateX(-750px)'});
 
 playSlide();
 
-
+let current = 0;
+$next.on('click',function () {
+    goToSlide(current+1);
+});
+$previous.on('click',function () {
+    goToSlide(current-1);
+});
 
 
 
@@ -43,7 +49,7 @@ function makeFakeSlide() {
 }
 
 
-let current = 0;
+
 function playSlide() {
 
     $('#buttonWrapper').on('click', 'button', function (e) {
@@ -54,12 +60,9 @@ function playSlide() {
     });
 }
 
-$next.on('click',function () {
-    goToSlide(current+1);
-});
-$previous.on('click',function () {
-    goToSlide(current-1);
-});
+
+
+
 
 let timer = setInterval(function () {
     goToSlide((current+1))
@@ -72,6 +75,16 @@ $('.container').on('mouseenter',function () {
     },1700);
 });
 
+document.addEventListener('visibilitychange',function () {
+    if(document.hidden){
+        window.clearInterval(timer);
+    }else{
+        timer = setInterval(function () {
+            goToSlide((current+1))
+        },1700);
+    }
+});
+
 function goToSlide(index) {
     if(index>$buttons.length-1){
         index=0;
@@ -80,10 +93,10 @@ function goToSlide(index) {
     }
 
     if(index === 0 && current === $buttons.length-1){
-        $slides.css({transform:`translateX(${-($buttons.length+1)*400}px)`})
+        $slides.css({transform:`translateX(${-($buttons.length+1)*750}px)`})
             .one('transitionend',function () {
                 $slides.hide().offset();
-                $slides.css({transform: `translateX(${-(index+1)*400}px)`})
+                $slides.css({transform: `translateX(${-(index+1)*750}px)`})
                     .show();
             });
         current = index;
@@ -91,12 +104,12 @@ function goToSlide(index) {
         $slides.css({transform:`translateX(0px)`})
             .one('transitionend',function () {
                 $slides.hide().offset();
-                $slides.css({transform: `translateX(${-(index+1)*400}px)`})
+                $slides.css({transform: `translateX(${-(index+1)*750}px)`})
                     .show();
             });
         current = index;
     }else{
-        $slides.css({transform:`translateX(${-(index+1)*400}px)`});
+        $slides.css({transform:`translateX(${-(index+1)*750}px)`});
         current = index;
     }
 }
