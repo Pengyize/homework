@@ -54,6 +54,7 @@ function playSlide() {
 
     $('#buttonWrapper').on('click', 'button', function (e) {
         let $button = $(e.currentTarget);
+        $button.addClass('active').siblings().removeClass('active');
         let index = $button.index();
         goToSlide(index);
 
@@ -64,26 +65,27 @@ function playSlide() {
 
 
 
-let timer = setInterval(function () {
-    goToSlide((current+1))
-},2000);
-$('.container').on('mouseenter',function () {
-    window.clearInterval(timer);
-}).on('mouseleave',function () {
-    timer = setInterval(function () {
-        goToSlide((current+1))
-    },2000);
-});
+// let timer = setInterval(function () {
+//     goToSlide((current+1))
+// },2000);
+//
+// $('.container').on('mouseenter',function () {
+//     window.clearInterval(timer);
+// }).on('mouseleave',function () {
+//     timer = setInterval(function () {
+//         goToSlide((current+1))
+//     },2000);
+// });
 
-document.addEventListener('visibilitychange',function () {
-    if(document.hidden){
-        window.clearInterval(timer);
-    }else{
-        timer = setInterval(function () {
-            goToSlide((current+1))
-        },2000);
-    }
-});
+// document.addEventListener('visibilitychange',function () {
+//     if(document.hidden){
+//         window.clearInterval(timer);
+//     }else{
+//         timer = setInterval(function () {
+//             goToSlide((current+1))
+//         },2000);
+//     }
+// });
 
 function goToSlide(index) {
     if(index>$buttons.length-1){

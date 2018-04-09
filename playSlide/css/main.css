@@ -6,11 +6,19 @@
     box-sizing: border-box;
 }
 
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
 .window{
     width: 750px;
     height: 360px;
-    margin: 20px auto;
+    /*margin: 50px auto;*/
     overflow: hidden;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.4);
 }
 
 .images{
@@ -21,10 +29,51 @@
     width: 100%;
 }
 
-.btn{
+.buttonWrapper{
     text-align: center;
+    /*border: 1px solid #dcdcdc;*/
+    /*padding: 14px;*/
+    background: linear-gradient(to bottom, #f3f3f3 0%,#eeeeee 50%,#f3f3f3 100%);
+    width: 750px;
+    margin: 0 auto;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.4);
+
+}
+.buttonWrapper>button{
+    padding: 16px 25px 13px;
+    border-style: none;
+}
+.buttonWrapper>button.active{
+    box-shadow: inset 0 0 50px #8d8d8d;
+}
+.buttonWrapper>button>svg{
+    width: 18px;
+    height: 18px;
 }
 
-#controls{
-    text-align: center;
+.container{
+    width: 750px;
+    margin: 50px auto;
+    /*border: 10px solid red;*/
+    position: relative;
 }
+
+/*#controls > button{*/
+    /*background: transparent;*/
+    /*position: absolute;*/
+
+/*}*/
+/*#controls > button.left{*/
+    /*top: 120px;*/
+    /*left: 0;*/
+
+/*}*/
+/*#controls > button.right{*/
+    /*top: 120px;*/
+    /*right: 0;*/
+/*}*/
+/*#controls > button > svg{*/
+    /*width: 60px;*/
+    /*height: 120px;*/
+    /*color: #929292;*/
+/*}*/
