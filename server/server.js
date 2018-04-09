@@ -47,7 +47,14 @@ var server = http.createServer(function(request, response){
   }else if(path === '/pay' && method.toUpperCase() === 'POST'){
 	var amount = fs.readFileSync('./db','utf8')
 	var newAmount = amount - 1
+	if(Math.random()>0.5){
+		fs.writeFileSync('./db',newAmount)
+		response.write('success')	
+	}else{
+		response.write('fail')
+	}
 	
+	response.end()
   }else{
     response.statusCode = 404
 	response.setHeader('Content-Type','text/html;charset=utf-8')

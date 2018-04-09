@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b09eebb7-a164-4281-bea3-630c2365e179" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/nav/main.js" afterPath="$PROJECT_DIR$/nav/main.js" />
-      <change beforePath="$PROJECT_DIR$/nav/style.css" afterPath="$PROJECT_DIR$/nav/style.css" />
+      <change beforePath="$PROJECT_DIR$/playSlide/css/main.css" afterPath="$PROJECT_DIR$/playSlide/css/main.css" />
+      <change beforePath="$PROJECT_DIR$/server/db" afterPath="$PROJECT_DIR$/server/db" />
+      <change beforePath="$PROJECT_DIR$/server/index.html" afterPath="$PROJECT_DIR$/server/index.html" />
       <change beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/server/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -118,11 +118,11 @@
         <option value="$PROJECT_DIR$/playSlide/js/main.js" />
         <option value="$PROJECT_DIR$/playSlide/index.html" />
         <option value="$PROJECT_DIR$/onclick/main.js" />
-        <option value="$PROJECT_DIR$/playSlide/css/main.css" />
         <option value="$PROJECT_DIR$/server/main.js" />
-        <option value="$PROJECT_DIR$/server/index.html" />
         <option value="$PROJECT_DIR$/nav/main.js" />
         <option value="$PROJECT_DIR$/nav/style.css" />
+        <option value="$PROJECT_DIR$/server/index.html" />
+        <option value="$PROJECT_DIR$/playSlide/css/main.css" />
       </list>
     </option>
   </component>
@@ -249,12 +249,12 @@
       <option name="presentableId" value="Default" />
       <updated>1521304870577</updated>
       <workItem from="1521304871719" duration="31901000" />
-      <workItem from="1521788268902" duration="95719000" />
+      <workItem from="1521788268902" duration="96208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127620000" />
+    <option name="totallyTimeSpent" value="128109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -605,22 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playSlide/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="96" lean-forward="true" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playSlide/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="33" column="68" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nav/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="611">
@@ -645,6 +629,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/playSlide/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -653,10 +645,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/playSlide/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="43" column="68" lean-forward="false" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding />
         </state>
       </provider>
