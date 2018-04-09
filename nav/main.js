@@ -28,7 +28,6 @@ function tag(tagName,attributes) {
     return element;
 }
 
-
 function getFromLocalStorage(name) {
     return JSON.parse(localStorage.getItem(name) || 'null');
 }
@@ -95,7 +94,6 @@ function init() {
         '3': {0:'shift',1:'z',2:'x',3:'c',4:'v',5:'b',6:'n',7:'m',8:',',9:'.',10:'/',11:'shift',length:12},
         length:4
     };
-
     var hash = {
         1 : 'pengyize.github.io',
         q: 'qq.com',
@@ -111,13 +109,11 @@ function init() {
         n: 'nba.com',
         m: 'www.mcdonalds.com.cn/'
     };
-
     //取出localStorage中对应的hash
     var hashInLocalStorage = getFromLocalStorage('zzz');
     if(hashInLocalStorage){
         hash = hashInLocalStorage;
     }
-
     return {
         keys: keys,
         hash: hash
@@ -157,9 +153,25 @@ function generateKeyBoard(keys,hash) {
 function listenToUsers(hash) {
     document.onkeypress = function (zxc) {
         var key = zxc.key;
+
         var website = hash[key];
         if(website !== undefined && website !== null){
+
             window.open('http://'+website, '_blank');
         }
     };
+    var kbd = document.getElementsByClassName('key');
+    console.log(kbd[1]);
+    for(let i=0;i<kbd.length;i++){
+        kbd[i].onclick = function (zxc) {
+            var kbdInfo = kbd[i];
+            var span = kbdInfo.children;
+            var key = span[0].innerText.toLowerCase();
+            var website = hash[key];
+            if(website !== undefined && website !== null){
+                window.open('http://'+website, '_blank');
+            }
+        };
+    }
+
 }

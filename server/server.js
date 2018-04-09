@@ -26,21 +26,33 @@ var server = http.createServer(function(request, response){
 
 
   console.log('奕泽说：得到 HTTP 路径\n' + path)
-  if(path == '/style.css'){
-    response.setHeader('Content-Type', 'text/css; charset=utf-8')
-    response.write('body{background:#888;}h1{color: white;}')
-    response.end()
-  }else if(path == '/main.js'){
-    response.setHeader('Content-Type', 'text/javascript; charset=utf-8')
-    response.write('alert("js")')
-    response.end()
-  }else if(path == '/'){
-    response.setHeader('Content-Type', 'text/html; charset=utf-8')
-    response.write('<!DOCTYPE>\n<html><head><link rel="stylesheet" href="/style.css"></head><body><h1>你好</h1><script src="/main.js"></script></body></html>')
-    response.end()
+  if(path === '/'){
+	var string = fs.readFileSync('./index.html', 'utf8')
+	var amount = fs.readFileSync('./db','utf8')
+	
+	string = string.replace('&&&amount&&&',amount)
+	response.setHeader('Content-Type','text/html;charset=utf-8')
+	response.write(string)
+	response.end()
+  }else if(path === '/main.js'){
+	var string = fs.readFileSync('./main.js', 'utf8')
+	response.setHeader('Content-Type', 'application/javascript')
+	response.write(string)
+	response.end()	
+  }else if(path === '/style.css'){
+	var string = fs.readFileSync('./style.css', 'utf8')
+	response.setHeader('Content-Type', 'text/css')
+	response.write(string)
+	response.end()	
+  }else if(path === '/pay' && method.toUpperCase() === 'POST'){
+	var amount = fs.readFileSync('./db','utf8')
+	var newAmount = amount - 1
+	
   }else{
     response.statusCode = 404
-    response.end()
+	response.setHeader('Content-Type','text/html;charset=utf-8')
+	response.write('找不到对应路径')
+	response.end()
   }
 
 

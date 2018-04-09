@@ -12,7 +12,7 @@ body{background: #ddd url("img/wallhaven-w-min.jpg") no-repeat center center ;ba
 
 #main > .row > .key {margin: 0 8px;}
 
-#main > .row > .key >button{color: white;background: black;border: 1px solid black;}
+#main > .row > .key >button{color: white;background: black;border: 1px solid black; transition: all .3s}
 
 #main > .row > .key >button:hover{color: black;background: white;padding: 1px 2px;border-radius: 4px;}
 
