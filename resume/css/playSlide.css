@@ -6,13 +6,6 @@
     box-sizing: border-box;
 }
 
-.icon {
-    width: 1em; height: 1em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-}
-
 .window{
     width: 920px;
     height: 460px;
