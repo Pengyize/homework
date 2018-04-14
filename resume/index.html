@@ -9,11 +9,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/pyz.gif" media="screen">
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="//at.alicdn.com/t/font_583876_6k9eqxfcjd9dlsor.js"></script>
+    <link rel="stylesheet" href="css/playSlide.css">
 </head>
 
 <body>
-
 <div id="siteWelcome" class="site-welcome active">
     <div class="loading"></div>
 </div>
@@ -30,16 +29,15 @@
                 <li>
                     <a href="#siteWorks">作品</a>
                     <ul class="subMenu">
+                        <li><a href="https://pengyize.github.io/homework/nav" target="_blank">键盘导航页</a></li>
                         <li><a href="https://pengyize.github.io/homework/canvas" target="_blank">画板</a></li>
-                        <li><a href="https://pengyize.github.io/homework/nav" target="_blank">导航页</a></li>
-                        <li><a href="http://pengyize.top/login/index.html">个人网站</a></li>
+                        <li><a href="https://pengyize.github.io/homework/playSlide" target="_blank">无缝轮播</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">博客</a>
                     <ul class="subMenu">
                         <li><a href="https://pengyize.github.io/" target="_blank">Hexo</a></li>
-
                     </ul>
                 </li>
                 <li><a href="#">日历</a></li>
@@ -185,10 +183,10 @@
 
     <h2>作品集</h2>
     <nav>
-        <ol class="clearfix">
-            <li id="portfolio1">所有</li>
-            <li id="portfolio2">框架</li>
-            <li id="portfolio3">原生JS & CSS</li>
+        <ol id="buttonWrapper" class="buttonWrapper clearfix">
+            <li id="portfolio1">键盘</li>
+            <li id="portfolio2">画板</li>
+            <li id="portfolio3">无缝轮播</li>
         </ol>
 
         <div id="portfolioBar" class="bar state-1">
@@ -206,21 +204,25 @@
             portfolioBar.className = 'bar state-3'
         }
     </script>
-    <div class="works" style="height: 597px">
-        <div class="big" style="top: 0; left: 0;">
-            <img src="img/photo1.jpg" alt="作品1">
-        </div>
-        <div class="small" style="top: 0; left: 624px;">
-            <img src="img/kaboompics2.jpg" alt="作品2">
-        </div>
-        <div class="small" style="top: 298px; left: 624px;">
-            <img src="img/photo-3.jpg" alt="作品3">
+
+    <div class="container">
+        <div class="window">
+            <div id="slides" class="images" >
+                <img src="img/nav-page2.jpg"  width="920" height="460" alt="图片">
+                <img src="img/canvas-page.jpg"  width="920" height="460" alt="图片">
+                <img src="img/playslide-page.jpg"  width="920" height="460" alt="图片">
+            </div>
         </div>
     </div>
 </section>
 
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="//at.alicdn.com/t/font_583876_6k9eqxfcjd9dlsor.js"></script>
 <script src='js/Tween.js'></script>
 <script src="js/main.js"></script>
+<script src="js/playSlide.js"></script>
 </body>
 </html>
 

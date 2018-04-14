@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.window{
+    width: 920px;
+    height: 460px;
+    /*margin: 50px auto;*/
+    overflow: hidden;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.4);
+}
+
+.images{
+    display: flex;
+    transition: all 1s;
+}
+.images > img{
+    width: 100%;
+}
+
+.container{
+    width: 920px;
+    margin: 0 auto 50px;
+    /*border: 10px solid red;*/
+    position: relative;
+}
+

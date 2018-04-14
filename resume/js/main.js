@@ -1,3 +1,4 @@
+
 var siteWelcome = document.getElementById('siteWelcome');
 var topNavBar = document.getElementById('topNavBar');
 
@@ -11,9 +12,9 @@ window.onscroll = function (xxx) {
         topNavBar.classList.remove('sticky');
     }
     findClosest();
-
-
 };
+
+
 function findClosest() {
     let specialTags = document.querySelectorAll('[data-x]');
     let minIndex = 0;
@@ -85,5 +86,3 @@ for(let i=0;i<aTags.length;i++) {
 
     }
 }
-
-

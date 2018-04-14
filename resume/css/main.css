@@ -313,6 +313,7 @@ section.portfolio > h2{
     font-size: 34px;
     line-height: 1.2;
     font-weight: 600;
+
 }
 section.skills > ol > li > p{
     font-size: 14px;
@@ -386,17 +387,18 @@ section.portfolio > nav .bar-inner{
     transition: all 0.5s;
 }
 section.portfolio > nav .bar.state-1 .bar-inner{
-    width: 50px;
+    width: 46px;
 }
 section.portfolio > nav .bar.state-2 .bar-inner{
-    margin-left: 69px;
+    margin-left: 68px;
     width: 60px;
 }
 section.portfolio > nav .bar.state-3 .bar-inner{
-    margin-left: 160px;
-    width: 124px;
+    margin-left: 164px;
+    width: 78px;
 
 }
+
 
 .portfolio .works{
     position: relative;

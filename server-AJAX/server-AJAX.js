@@ -27,22 +27,32 @@ var server = http.createServer(function(request, response){
 
   if(path === '/'){
 	var string = fs.readFileSync('./index.html', 'utf8')
-	var amount = fs.readFileSync('./db','utf8')
-	string = string.replace('&&&amount&&&',amount)
-	response.statusCode = 200
+	response.statusCode =200
 	response.setHeader('Content-Type','text/html;charset=utf-8')
 	response.write(string)
 	response.end()
-  }else if(path === '/pay'){
-	var amount = fs.readFileSync('./db','utf8')
-	var newAmount = amount - 1
-	fs.writeFileSync('./db',newAmount)
-	response.setHeader('Content-Type', 'application/javascript')
+  }else if(path === '/main.js'){
+	var string = fs.readFileSync('./main.js', 'utf8')
+	response.statusCode =200
+	response.setHeader('Content-Type','text/javascript;charset=utf-8')
+	response.write(string)
+	response.end()
+  }else if(path === '/xxx'){
 	response.statusCode = 200
+	response.setHeader('Content-Type','text/json;charset=utf-8')
+	response.setHeader('Access-Control-Allow-Origin','*')
 	response.write(`
-		${query.callback}.call(undefined,'success')
-	`)	
-	response.end() 
+	{
+	  "node":{
+	    "to": "小",
+	    "from": "asd",
+	    "heading": "打招呼",
+	    "content": "hi"
+	  }
+	}
+	`)
+	response.end()
+	
   }else{
    	response.statusCode = 404
 	response.setHeader('Content-Type','text/html;charset=utf-8')
@@ -62,5 +72,3 @@ var server = http.createServer(function(request, response){
 
 server.listen(port)
 console.log('监听 ' + port + ' 成功\n请用在空中转体720度然后用电饭煲打开 http://localhost:' + port)
-
-
