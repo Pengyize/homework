@@ -8,8 +8,8 @@
     <title>PengYiZe's Block</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/pyz.gif" media="screen">
     <link rel="stylesheet" href="css/loading.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/playSlide.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -24,25 +24,25 @@
         </a>
         <nav class="menu">
             <ul class="clearfix">
-                <li class="highlight"><a href="#siteAbout">关于</a></li>
-                <li><a href="#siteSkills">技能</a></li>
+                <li class="highlight"><a class="anchor" href="#siteAbout">关于</a></li>
+                <li><a class="anchor" href="#siteSkills">技能</a></li>
                 <li>
-                    <a href="#siteWorks">作品</a>
-                    <ul class="subMenu">
-                        <li><a href="https://pengyize.github.io/homework/nav" target="_blank">键盘导航页</a></li>
+                    <a class="anchor" href="#siteWorks">作品</a>
+                    <ul class=" subMenu">
+                        <li><a href="https://pengyize.github.io/homework/nav" target="_blank">键盘</a></li>
                         <li><a href="https://pengyize.github.io/homework/canvas" target="_blank">画板</a></li>
-                        <li><a href="https://pengyize.github.io/homework/playSlide" target="_blank">无缝轮播</a></li>
+                        <li><a href="https://pengyize.github.io/homework/playSlide" target="_blank">轮播</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">博客</a>
+                    <a class="anchor" href="#">博客</a>
                     <ul class="subMenu">
                         <li><a href="https://pengyize.github.io/" target="_blank">Hexo</a></li>
                     </ul>
                 </li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其他</a></li>
+                <li><a class="anchor" href="#">日历</a></li>
+                <li><a class="anchor" href="#">联系方式</a></li>
+                <li><a class="anchor" href="#">其他</a></li>
             </ul>
         </nav>
     </div>
@@ -64,7 +64,7 @@
                         <span class="triangle"></span>
                     </span>
                     <h1>彭奕泽</h1>
-                    <p>目前正在学习前端开发</p>
+                    <p>正在学习前端开发</p>
                     <hr>
                     <dl class="clearfix">
                         <dt>年龄</dt>
@@ -181,12 +181,13 @@
 
 <section data-x id="siteWorks" class="portfolio offset">
 
-    <h2>作品集</h2>
+    <h2>作品</h2>
+
     <nav>
         <ol id="buttonWrapper" class="buttonWrapper clearfix">
             <li id="portfolio1">键盘</li>
             <li id="portfolio2">画板</li>
-            <li id="portfolio3">无缝轮播</li>
+            <li id="portfolio3">轮播</li>
         </ol>
 
         <div id="portfolioBar" class="bar state-1">
@@ -206,25 +207,43 @@
     </script>
 
     <div class="container">
-        <div class="window">
+        <div id="window" class="window">
             <div id="slides" class="images" >
                 <img src="img/nav-page2.jpg"  width="920" height="460" alt="图片">
-                <img src="img/canvas-page.jpg"  width="920" height="460" alt="图片">
+                <img src="img/canvas-page2.jpg"  width="920" height="460" alt="图片">
                 <img src="img/playslide-page.jpg"  width="920" height="460" alt="图片">
             </div>
         </div>
     </div>
 </section>
 
+<section class="message">
+    <h2>留言</h2>
+    <ol id="messageList">
+    </ol>
+
+    <form id="postMessageForm" style="width:700px; margin: 50px auto" action="">
+        <input type="text" name="name">
+        <input type="text" name="content">
+        <input type="submit" value="提交">
+    </form>
+</section>
 
 
+<!--库-->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="//at.alicdn.com/t/font_583876_6k9eqxfcjd9dlsor.js"></script>
 <script src='js/Tween.js'></script>
+<script src="//cdn1.lncld.net/static/js/3.6.5/av-min.js"></script>
+
+<!--模块化-->
 <script src="js/playSlide.js"></script>
 <script src="js/auto-slide-up.js"></script>
 <script src="js/sticky-topbar.js"></script>
-<script src="js/main.js"></script>
+<script src="js/smoothly-to-anchor.js"></script>
+<script src="js/topNavBar-subSlide.js"></script>
+<script src="js/removeLoading.js"></script>
+<script src="js/message.js"></script>
 </body>
 </html>
 

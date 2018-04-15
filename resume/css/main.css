@@ -94,7 +94,7 @@ h2,h3,h4,h5,h6{
     width: 100%;
     background: #f85961;
     height: 3px;
-    animation: menuBorder 0.4s;
+    animation: menuBorder 1s;
 }
 @keyframes menuBorder {
     0%{
@@ -104,6 +104,8 @@ h2,h3,h4,h5,h6{
         width: 100%;
     }
 }
+
+
 .topNavBar .subMenu{
     color: #545a65;
     display: none;
@@ -111,9 +113,8 @@ h2,h3,h4,h5,h6{
     right: 0;
     top: 100%;
     background: white;
-    padding: 12px 30px;
+    padding: 12px 16px;
     box-shadow: 0 0 5px rgba(0,0,0,.5);
-
 }
 .topNavBar li.active .subMenu{
     display: block;
@@ -123,7 +124,8 @@ h2,h3,h4,h5,h6{
     white-space: nowrap;
 }
 .topNavBar .subMenu li a{
-    padding: 6px 0;
+    padding: 6px 10px;
+    display: block;
 }
 .topNavBar .menu .subMenu li a:hover{
     color: #e97579;
@@ -307,6 +309,7 @@ section.portfolio{
     padding-bottom: 0;
 }
 section.skills > h2,
+section.message > h2,
 section.portfolio > h2{
     text-align: center;
     color: #3d4451;
@@ -387,6 +390,7 @@ section.portfolio > nav .bar-inner{
     transition: all 0.5s;
 }
 section.portfolio > nav .bar.state-1 .bar-inner{
+    margin-left: -4px;
     width: 46px;
 }
 section.portfolio > nav .bar.state-2 .bar-inner{
@@ -394,8 +398,8 @@ section.portfolio > nav .bar.state-2 .bar-inner{
     width: 60px;
 }
 section.portfolio > nav .bar.state-3 .bar-inner{
-    margin-left: 164px;
-    width: 78px;
+    margin-left: 146px;
+    width: 64px;
 
 }
 
@@ -432,4 +436,17 @@ section.portfolio > nav .bar.state-3 .bar-inner{
     transform: translateY(0);
     transition: all 1s;
     opacity: 1;
+}
+
+section.message > ol{
+    max-width: 940px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    background: #f4f4f4;
+}
+
+section.message > ol > li {
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+
 }
