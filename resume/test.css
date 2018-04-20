@@ -1,27 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
+#code-wrapper{
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    padding: 24px;
 }
 
-body{
-    font-size: 16px;
+#code{
+    border: 1px solid #888;
+    height: 92vh;
 }
-
-.clearfix::after{
-    content: "";
-    clear: both;
-    display: block;
-}
-
-.child{
-    background: #ddd;
-    width: 4rem;
-    height: 2rem;
-    margin: 0.5rem 0.5rem;
-    float: left;
-}
-
-/*.father{*/
-    /*display: flex;               //让它变成一个弹性盒*/
-    /*justify-content: center;     //水平居中*/
-/*}*/

@@ -1,8 +1,6 @@
+let converter = new showdown.Converter(),
+    text      = '#hello, markdown!',
+    html      = converter.makeHtml(text);
 
-console.log(b);
-
-function x() {
-    var b=1;
-
-}
-
+console.log(html);
+document.body.appendChild(html);

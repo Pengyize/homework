@@ -94,7 +94,7 @@ h2,h3,h4,h5,h6{
     width: 100%;
     background: #f85961;
     height: 3px;
-    animation: menuBorder 1s;
+    animation: menuBorder .6s;
 }
 @keyframes menuBorder {
     0%{
@@ -324,7 +324,7 @@ section.skills > ol > li > p{
     padding-right: 40px;
 }
 section.skills > ol{
-    box-shadow: 0px 1px 3px 1px rgba(102,102,102,0.5);
+    box-shadow: 0 1px 3px 1px rgba(102,102,102,0.5);
     background-color: white;
     padding: 42px 40px 15px;
     margin-top: 30px;

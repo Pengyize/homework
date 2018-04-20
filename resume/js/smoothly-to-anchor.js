@@ -1,5 +1,5 @@
 !function () {
-    let view  = document.querySelector('nav.menu');
+    let view  = View('nav.menu');
     let controller ={
         view: null,
         aTags: null,
@@ -33,7 +33,7 @@
             let targetTop = top-120;    //目标位置
             let coords = { y: currentTop};
             let tween = new TWEEN.Tween(coords)
-                .to({ y: targetTop}, 400)
+                .to({ y: targetTop}, 600)
                 .easing(TWEEN.Easing.Quadratic.Out)
                 .onUpdate(function() {
                     window.scrollTo(0,coords.y);

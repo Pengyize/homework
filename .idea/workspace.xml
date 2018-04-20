@@ -6,14 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="b09eebb7-a164-4281-bea3-630c2365e179" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/playSlide/index.html" afterPath="$PROJECT_DIR$/playSlide/index.html" />
       <change beforePath="$PROJECT_DIR$/resume/css/main.css" afterPath="$PROJECT_DIR$/resume/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/resume/img/canvas-page.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/resume/css/playSlide.css" afterPath="$PROJECT_DIR$/resume/css/playSlide.css" />
       <change beforePath="$PROJECT_DIR$/resume/index.html" afterPath="$PROJECT_DIR$/resume/index.html" />
-      <change beforePath="$PROJECT_DIR$/resume/js/auto-slide-up.js" afterPath="$PROJECT_DIR$/resume/js/auto-slide-up.js" />
-      <change beforePath="$PROJECT_DIR$/resume/js/main.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resume/js/playSlide.js" afterPath="$PROJECT_DIR$/resume/js/playSlide.js" />
+      <change beforePath="$PROJECT_DIR$/resume/js/Tween.js" afterPath="$PROJECT_DIR$/resume/js/lib/Tween.js" />
+      <change beforePath="$PROJECT_DIR$/resume/js/jquery-3.3.1.min.js" afterPath="$PROJECT_DIR$/resume/js/lib/jquery-3.3.1.min.js" />
+      <change beforePath="$PROJECT_DIR$/resume/js/message.js" afterPath="$PROJECT_DIR$/resume/js/message.js" />
+      <change beforePath="$PROJECT_DIR$/resume/js/smoothly-to-anchor.js" afterPath="$PROJECT_DIR$/resume/js/smoothly-to-anchor.js" />
       <change beforePath="$PROJECT_DIR$/resume/js/sticky-topbar.js" afterPath="$PROJECT_DIR$/resume/js/sticky-topbar.js" />
+      <change beforePath="$PROJECT_DIR$/resume/test.css" afterPath="$PROJECT_DIR$/resume/test.css" />
+      <change beforePath="$PROJECT_DIR$/resume/test.html" afterPath="$PROJECT_DIR$/resume/test.html" />
+      <change beforePath="$PROJECT_DIR$/resume/test.js" afterPath="$PROJECT_DIR$/resume/test.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,125 +31,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resume/index.html">
+        <entry file="file://$PROJECT_DIR$/animation-resume/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#li#5;n#ol#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resume/js/message.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1002">
-              <caret line="70" column="32" lean-forward="false" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+            <state relative-caret-position="88">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sticky-topbar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resume/js/sticky-topbar.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/animation-resume/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="-2321">
+              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resume/css/main.css">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/animation-resume/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="444" column="23" lean-forward="false" selection-start-line="444" selection-start-column="23" selection-end-line="444" selection-end-column="23" />
-              <folding>
-                <element signature="e#4#185#0" expanded="false" />
-                <element signature="e#188#222#0" expanded="false" />
-                <element signature="e#225#275#0" expanded="false" />
-                <element signature="e#279#350#0" expanded="false" />
-                <element signature="e#357#382#0" expanded="false" />
-                <element signature="e#398#426#0" expanded="false" />
-                <element signature="e#434#541#0" expanded="false" />
-                <element signature="e#559#616#0" expanded="false" />
-                <element signature="e#634#658#0" expanded="false" />
-                <element signature="e#669#780#0" expanded="false" />
-                <element signature="e#793#813#0" expanded="false" />
-                <element signature="e#828#850#0" expanded="false" />
-                <element signature="e#870#926#0" expanded="false" />
-                <element signature="e#951#1042#0" expanded="false" />
-                <element signature="e#1072#1334#0" expanded="false" />
-                <element signature="e#1424#1626#0" expanded="false" />
-                <element signature="e#1627#1721#0" expanded="false" />
-                <element signature="e#1743#1925#0" expanded="false" />
-                <element signature="e#1955#2011#0" expanded="false" />
-                <element signature="e#2034#2062#0" expanded="false" />
-                <element signature="e#2087#2133#0" expanded="false" />
-                <element signature="e#2170#2193#0" expanded="false" />
-                <element signature="e#2194#2324#0" expanded="false" />
-                <element signature="e#2226#2281#0" expanded="false" />
-                <element signature="e#2290#2322#0" expanded="false" />
-                <element signature="e#2341#2451#0" expanded="false" />
-                <element signature="e#2472#2518#0" expanded="false" />
-                <element signature="e#2541#2565#0" expanded="false" />
-                <element signature="e#2601#2624#0" expanded="false" />
-                <element signature="e#2642#2749#0" expanded="false" />
-                <element signature="e#2758#2867#0" expanded="false" />
-                <element signature="e#2881#2942#0" expanded="false" />
-                <element signature="e#2953#3108#0" expanded="false" />
-                <element signature="e#3127#3301#0" expanded="false" />
-                <element signature="e#3330#3513#0" expanded="false" />
-                <element signature="e#3532#3552#0" expanded="false" />
-                <element signature="e#3568#3670#0" expanded="false" />
-                <element signature="e#3689#3738#0" expanded="false" />
-                <element signature="e#3757#3780#0" expanded="false" />
-                <element signature="e#3806#3833#0" expanded="false" />
-                <element signature="e#3866#3906#0" expanded="false" />
-                <element signature="e#3922#3964#0" expanded="false" />
-                <element signature="e#3980#4019#0" expanded="false" />
-                <element signature="e#4044#4102#0" expanded="false" />
-                <element signature="e#4131#4303#0" expanded="false" />
-                <element signature="e#4338#4372#0" expanded="false" />
-                <element signature="e#4386#4466#0" expanded="false" />
-                <element signature="e#4482#4520#0" expanded="false" />
-                <element signature="e#4536#4596#0" expanded="false" />
-                <element signature="e#4609#4636#0" expanded="false" />
-                <element signature="e#4672#4699#0" expanded="false" />
-                <element signature="e#4727#4961#0" expanded="false" />
-                <element signature="e#4995#5052#0" expanded="false" />
-                <element signature="e#5082#5248#0" expanded="false" />
-                <element signature="e#5264#5368#0" expanded="false" />
-                <element signature="e#5386#5503#0" expanded="false" />
-                <element signature="e#5569#5682#0" expanded="false" />
-                <element signature="e#5711#5782#0" expanded="false" />
-                <element signature="e#5802#5940#0" expanded="false" />
-                <element signature="e#5965#6029#0" expanded="false" />
-                <element signature="e#6070#6091#0" expanded="false" />
-                <element signature="e#6119#6240#0" expanded="false" />
-                <element signature="e#6265#6413#0" expanded="false" />
-                <element signature="e#6445#6482#0" expanded="false" />
-                <element signature="e#6501#6528#0" expanded="false" />
-                <element signature="e#6552#6629#0" expanded="false" />
-                <element signature="e#6658#6713#0" expanded="false" />
-                <element signature="e#6748#6812#0" expanded="false" />
-                <element signature="e#6859#6882#0" expanded="false" />
-                <element signature="e#6911#7025#0" expanded="false" />
-                <element signature="e#7060#7156#0" expanded="false" />
-                <element signature="e#7204#7247#0" expanded="false" />
-                <element signature="e#7295#7338#0" expanded="false" />
-                <element signature="e#7386#7431#0" expanded="false" />
-                <element signature="e#7451#7504#0" expanded="false" />
-                <element signature="e#7553#7580#0" expanded="false" />
-                <element signature="e#7595#7736#0" expanded="false" />
-                <element signature="e#7757#7780#0" expanded="false" />
-                <element signature="e#7797#7850#0" expanded="false" />
-                <element signature="e#7860#7933#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="440">
+              <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,19 +66,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>li</find>
-      <find>svg</find>
-      <find>jian</find>
-      <find>transition</find>
-      <find>img</find>
-      <find>parent</find>
       <find>offset</find>
       <find>download</find>
       <find>shadow</find>
@@ -194,6 +97,12 @@
       <find>siteWel</find>
       <find>active</find>
       <find>h2</find>
+      <find>pro</find>
+      <find>port</find>
+      <find>box</find>
+      <find>menu</find>
+      <find>canvas</find>
+      <find>var</find>
     </findStrings>
     <replaceStrings>
       <replace>orange</replace>
@@ -201,6 +110,7 @@
       <replace>download</replace>
       <replace>\$slides</replace>
       <replace>view</replace>
+      <replace>let</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -225,7 +135,6 @@
         <option value="$PROJECT_DIR$/mobile/style.css" />
         <option value="$PROJECT_DIR$/mobile/index.html" />
         <option value="$PROJECT_DIR$/onclick/index.html" />
-        <option value="$PROJECT_DIR$/resume/test.css" />
         <option value="$PROJECT_DIR$/onclick/style.css" />
         <option value="$PROJECT_DIR$/playSlide/js/main.js" />
         <option value="$PROJECT_DIR$/nav/style.css" />
@@ -235,22 +144,32 @@
         <option value="$PROJECT_DIR$/server/index.html" />
         <option value="$PROJECT_DIR$/server-AJAX/index.html" />
         <option value="$PROJECT_DIR$/server-AJAX/main.js" />
-        <option value="$PROJECT_DIR$/resume/test.html" />
         <option value="$PROJECT_DIR$/onclick/main.js" />
-        <option value="$PROJECT_DIR$/resume/test.js" />
         <option value="$PROJECT_DIR$/playSlide/playSlide.js" />
-        <option value="$PROJECT_DIR$/resume/css/playSlide.css" />
         <option value="$PROJECT_DIR$/resume/js/auto-slide-up.js" />
-        <option value="$PROJECT_DIR$/resume/js/playSlide.js" />
-        <option value="$PROJECT_DIR$/resume/js/sticky-topbar.js" />
         <option value="$PROJECT_DIR$/playSlide/index.html" />
-        <option value="$PROJECT_DIR$/resume/js/topNavBar-subSlide.js" />
         <option value="$PROJECT_DIR$/resume/js/main.js" />
         <option value="$PROJECT_DIR$/resume/js/loading.js" />
+        <option value="$PROJECT_DIR$/resume/css/playSlide.css" />
+        <option value="$PROJECT_DIR$/resume/js/sticky-topbar.js" />
+        <option value="$PROJECT_DIR$/resume/js/playSlide.js" />
+        <option value="$PROJECT_DIR$/resume/js/topNavBar-subSlide.js" />
         <option value="$PROJECT_DIR$/resume/js/smoothly-to-anchor.js" />
         <option value="$PROJECT_DIR$/resume/css/main.css" />
+        <option value="$PROJECT_DIR$/resume/js/View.js" />
         <option value="$PROJECT_DIR$/resume/index.html" />
+        <option value="$PROJECT_DIR$/resume/js/base/Controller.js" />
+        <option value="$PROJECT_DIR$/resume/js/base/Model.js" />
         <option value="$PROJECT_DIR$/resume/js/message.js" />
+        <option value="$PROJECT_DIR$/resume/test.js" />
+        <option value="$PROJECT_DIR$/animation-resume/js/markdown.css" />
+        <option value="$PROJECT_DIR$/animation-resume/js/markdown.js" />
+        <option value="$PROJECT_DIR$/animation-resume/css/markdown.css" />
+        <option value="$PROJECT_DIR$/resume/test.html" />
+        <option value="$PROJECT_DIR$/resume/test.css" />
+        <option value="$PROJECT_DIR$/animation-resume/css/style.css" />
+        <option value="$PROJECT_DIR$/animation-resume/index.html" />
+        <option value="$PROJECT_DIR$/animation-resume/js/main.js" />
       </list>
     </option>
   </component>
@@ -304,7 +223,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,32 +233,13 @@
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="canvas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="mobile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="onclick" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="playSlide" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
+              <item name="animation-resume" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,6 +251,12 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/scofieldmichael/Desktop/repos/homework/playSlide/css/main.css" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resume/js/lib" />
+      <recent name="$PROJECT_DIR$/resume/js/base" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -379,12 +284,13 @@
       <option name="presentableId" value="Default" />
       <updated>1521304870577</updated>
       <workItem from="1521304871719" duration="31901000" />
-      <workItem from="1521788268902" duration="146717000" />
+      <workItem from="1521788268902" duration="160568000" />
+      <workItem from="1524110188901" duration="17533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178618000" />
+    <option name="totallyTimeSpent" value="210002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -394,18 +300,18 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -422,97 +328,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resume/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="45" column="34" lean-forward="false" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#1;n#ol#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#5;n#ol#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4444">
-          <caret line="202" column="15" lean-forward="false" selection-start-line="202" selection-start-column="15" selection-end-line="202" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/canvas/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#1#35#0" expanded="false" />
-            <element signature="e#41#81#0" expanded="false" />
-            <element signature="e#88#113#0" expanded="false" />
-            <element signature="e#116#146#0" expanded="false" />
-            <element signature="e#157#214#0" expanded="false" />
-            <element signature="e#222#329#0" expanded="false" />
-            <element signature="e#338#430#0" expanded="false" />
-            <element signature="e#440#527#0" expanded="false" />
-            <element signature="e#540#621#0" expanded="false" />
-            <element signature="e#641#671#0" expanded="false" />
-            <element signature="e#681#737#0" expanded="false" />
-            <element signature="e#750#777#0" expanded="false" />
-            <element signature="e#797#852#0" expanded="false" />
-            <element signature="e#876#966#0" expanded="false" />
-            <element signature="e#991#1034#0" expanded="false" />
-            <element signature="e#1042#1102#0" expanded="false" />
-            <element signature="e#1113#1209#0" expanded="false" />
-            <element signature="e#1219#1369#0" expanded="false" />
-            <element signature="e#1384#1427#0" expanded="false" />
-            <element signature="e#1516#1563#0" expanded="false" />
-            <element signature="e#1585#1633#0" expanded="false" />
-            <element signature="e#1641#1673#0" expanded="false" />
-            <element signature="e#1679#1713#0" expanded="false" />
-            <element signature="e#1721#1755#0" expanded="false" />
-            <element signature="e#1762#1796#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/loading.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="126" column="0" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/js/Tween.js">
+    <entry file="file://$PROJECT_DIR$/resume/main.js" />
+    <entry file="file://$PROJECT_DIR$/resume/js/lib/Tween.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,31 +340,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="59" column="14" lean-forward="false" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playSlide/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/playSlide/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/playSlide/main.css" />
+    <entry file="file://$PROJECT_DIR$/playSlide/main.js" />
     <entry file="file://$PROJECT_DIR$/canvas/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,7 +356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="715">
           <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -568,15 +371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/test.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -584,7 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,7 +385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,23 +407,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server-AJAX/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server-AJAX/server.js" />
     <entry file="file://$PROJECT_DIR$/server/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,7 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,27 +433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/playSlide/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="116" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -680,7 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,37 +451,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="82" selection-end-column="5" />
-          <folding>
-            <element signature="e#1#35#0" expanded="false" />
-            <element signature="e#37#68#0" expanded="false" />
-            <element signature="e#76#183#0" expanded="false" />
-            <element signature="e#192#324#0" expanded="false" />
-            <element signature="e#333#379#0" expanded="false" />
-            <element signature="e#429#606#0" expanded="false" />
-            <element signature="e#827#870#0" expanded="false" />
-            <element signature="e#898#947#0" expanded="false" />
-            <element signature="e#973#1011#0" expanded="false" />
-            <element signature="e#1023#1123#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume/css/playSlide.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <element signature="e#1#35#0" expanded="false" />
-            <element signature="e#37#68#0" expanded="false" />
-            <element signature="e#77#209#0" expanded="false" />
-            <element signature="e#218#264#0" expanded="false" />
-            <element signature="e#278#298#0" expanded="false" />
-            <element signature="e#310#412#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/js/jquery-3.3.1.min.js">
+    <entry file="file://$PROJECT_DIR$/resume/js/lib/jquery-3.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -732,50 +468,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume/js/auto-slide-up.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/js/playSlide.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/js/topNavBar-subSlide.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/js/smoothly-to-anchor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/js/main.js" />
     <entry file="file://$PROJECT_DIR$/server-AJAX/server-AJAX.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-286">
@@ -796,7 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,96 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="444" column="23" lean-forward="false" selection-start-line="444" selection-start-column="23" selection-end-line="444" selection-end-column="23" />
-          <folding>
-            <element signature="e#4#185#0" expanded="false" />
-            <element signature="e#188#222#0" expanded="false" />
-            <element signature="e#225#275#0" expanded="false" />
-            <element signature="e#279#350#0" expanded="false" />
-            <element signature="e#357#382#0" expanded="false" />
-            <element signature="e#398#426#0" expanded="false" />
-            <element signature="e#434#541#0" expanded="false" />
-            <element signature="e#559#616#0" expanded="false" />
-            <element signature="e#634#658#0" expanded="false" />
-            <element signature="e#669#780#0" expanded="false" />
-            <element signature="e#793#813#0" expanded="false" />
-            <element signature="e#828#850#0" expanded="false" />
-            <element signature="e#870#926#0" expanded="false" />
-            <element signature="e#951#1042#0" expanded="false" />
-            <element signature="e#1072#1334#0" expanded="false" />
-            <element signature="e#1424#1626#0" expanded="false" />
-            <element signature="e#1627#1721#0" expanded="false" />
-            <element signature="e#1743#1925#0" expanded="false" />
-            <element signature="e#1955#2011#0" expanded="false" />
-            <element signature="e#2034#2062#0" expanded="false" />
-            <element signature="e#2087#2133#0" expanded="false" />
-            <element signature="e#2170#2193#0" expanded="false" />
-            <element signature="e#2194#2324#0" expanded="false" />
-            <element signature="e#2226#2281#0" expanded="false" />
-            <element signature="e#2290#2322#0" expanded="false" />
-            <element signature="e#2341#2451#0" expanded="false" />
-            <element signature="e#2472#2518#0" expanded="false" />
-            <element signature="e#2541#2565#0" expanded="false" />
-            <element signature="e#2601#2624#0" expanded="false" />
-            <element signature="e#2642#2749#0" expanded="false" />
-            <element signature="e#2758#2867#0" expanded="false" />
-            <element signature="e#2881#2942#0" expanded="false" />
-            <element signature="e#2953#3108#0" expanded="false" />
-            <element signature="e#3127#3301#0" expanded="false" />
-            <element signature="e#3330#3513#0" expanded="false" />
-            <element signature="e#3532#3552#0" expanded="false" />
-            <element signature="e#3568#3670#0" expanded="false" />
-            <element signature="e#3689#3738#0" expanded="false" />
-            <element signature="e#3757#3780#0" expanded="false" />
-            <element signature="e#3806#3833#0" expanded="false" />
-            <element signature="e#3866#3906#0" expanded="false" />
-            <element signature="e#3922#3964#0" expanded="false" />
-            <element signature="e#3980#4019#0" expanded="false" />
-            <element signature="e#4044#4102#0" expanded="false" />
-            <element signature="e#4131#4303#0" expanded="false" />
-            <element signature="e#4338#4372#0" expanded="false" />
-            <element signature="e#4386#4466#0" expanded="false" />
-            <element signature="e#4482#4520#0" expanded="false" />
-            <element signature="e#4536#4596#0" expanded="false" />
-            <element signature="e#4609#4636#0" expanded="false" />
-            <element signature="e#4672#4699#0" expanded="false" />
-            <element signature="e#4727#4961#0" expanded="false" />
-            <element signature="e#4995#5052#0" expanded="false" />
-            <element signature="e#5082#5248#0" expanded="false" />
-            <element signature="e#5264#5368#0" expanded="false" />
-            <element signature="e#5386#5503#0" expanded="false" />
-            <element signature="e#5569#5682#0" expanded="false" />
-            <element signature="e#5711#5782#0" expanded="false" />
-            <element signature="e#5802#5940#0" expanded="false" />
-            <element signature="e#5965#6029#0" expanded="false" />
-            <element signature="e#6070#6091#0" expanded="false" />
-            <element signature="e#6119#6240#0" expanded="false" />
-            <element signature="e#6265#6413#0" expanded="false" />
-            <element signature="e#6445#6482#0" expanded="false" />
-            <element signature="e#6501#6528#0" expanded="false" />
-            <element signature="e#6552#6629#0" expanded="false" />
-            <element signature="e#6658#6713#0" expanded="false" />
-            <element signature="e#6748#6812#0" expanded="false" />
-            <element signature="e#6859#6882#0" expanded="false" />
-            <element signature="e#6911#7025#0" expanded="false" />
-            <element signature="e#7060#7156#0" expanded="false" />
-            <element signature="e#7204#7247#0" expanded="false" />
-            <element signature="e#7295#7338#0" expanded="false" />
-            <element signature="e#7386#7431#0" expanded="false" />
-            <element signature="e#7451#7504#0" expanded="false" />
-            <element signature="e#7553#7580#0" expanded="false" />
-            <element signature="e#7595#7736#0" expanded="false" />
-            <element signature="e#7757#7780#0" expanded="false" />
-            <element signature="e#7797#7850#0" expanded="false" />
-            <element signature="e#7860#7933#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,33 +506,173 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/js/topNavBar-subSlide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/css/playSlide.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/js/playSlide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/js/smoothly-to-anchor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/js/sticky-topbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/js/auto-slide-up.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="31" column="7" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/canvas/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="65" column="63" lean-forward="true" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resume/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#li#5;n#ol#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="490">
+          <caret line="237" column="0" lean-forward="true" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume/js/sticky-topbar.js">
+    <entry file="file://$PROJECT_DIR$/resume/js/base/View.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/js/base/Controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/js/base/Model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resume/js/message.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1002">
-          <caret line="70" column="32" lean-forward="false" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        <state relative-caret-position="613">
+          <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animation-resume/js/markdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="140" lean-forward="false" selection-start-line="5" selection-start-column="140" selection-end-line="5" selection-end-column="140" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animation-resume/css/markdown.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-452">
+          <caret line="644" column="0" lean-forward="false" selection-start-line="644" selection-start-column="0" selection-end-line="644" selection-end-column="0" />
+          <folding>
+            <element signature="e#54#2295#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animation-resume/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animation-resume/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/animation-resume/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2321">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
           <folding />
         </state>
       </provider>
