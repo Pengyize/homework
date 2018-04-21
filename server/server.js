@@ -26,7 +26,7 @@ var server = http.createServer(function(request, response){
 
 
   if(path === '/'){
-	var string = fs.readFileSync('./index.html', 'utf8')
+	var string = fs.readFileSync('./sign_up.html', 'utf8')
 	var amount = fs.readFileSync('./db','utf8')
 	string = string.replace('&&&amount&&&',amount)
 	response.statusCode = 200

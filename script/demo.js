@@ -13,7 +13,7 @@ if(fs.existsSync('/users/scofieldmichael/Desktop/dirName')){
   fs.mkdirSync('css')
   fs.mkdirSync('js')
 
-  fs.writeFileSync("./index.html", "<!DOCTYPE>\n<title>Hello</title>\n<h1>Hi</h1>");
+  fs.writeFileSync("./sign_up.html", "<!DOCTYPE>\n<title>Hello</title>\n<h1>Hi</h1>");
   fs.writeFileSync("css/default.css", "h1{color: red;}");
   fs.writeFileSync("./js/main.js", "var string = 'Hello World';\nalert(string);");
 }
