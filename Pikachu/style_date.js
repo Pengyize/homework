@@ -1,43 +1,28 @@
 !function () {
-    let duration =20;
-
-  function writeCode(prefix, code, fn) {
-      let container = document.querySelector('#code');
-      let styleTag = document.querySelector('#styleTag');
-      let wrapper = document.querySelector('#code-wrapper');
-      let n=0;
-      setTimeout(function run(){
-          n += 1;
-          container.innerHTML =Prism.highlight(prefix + code.substring(0,n), Prism.languages.css) ;
-          styleTag.innerHTML = prefix + code.substring(0,n);
-          wrapper.scrollTop = wrapper.scrollHeight;
-          if(n<code.length) {
-              setTimeout(run,duration)
-          }else{
-              fn && fn();
-          }
-      },duration)
-  }
-
-let code = `
+    window.code = `
 /*
- * 首先画皮卡丘的皮肤
+ *  面试官，你好！
+ *  
+ *  我叫 「 彭奕泽 」，在大学期间自学了前端开发。
+ * 
+ *  很高兴您能够腾出宝贵的时间来看我的作品！
+ *
+ *  今天我们用 CSS 来画一只皮卡丘!
  */
+
  
-.preview{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
     background: #fee433;
+    font-size: 16px;
 }
 
 
-.wrapper{
-    width: 100%;
-    height: 165px;
-    position: relative;
+/* 首先准备一张纸 */
+#container{
+    opacity: 0.4;
+}
+.black{
+    background: black;
 }
 
 /*
@@ -46,14 +31,14 @@ let code = `
 
 .nose{
     position: absolute;
-    left: 50%;
-    top: 28px;
     width: 0;
     height: 0;
+    top: -70px;
+    left: calc(50% - 11px);
     border: 12px solid black;
     border-color: black transparent transparent;
     border-radius: 50%;
-    margin-left: -12px;
+    margin: 100px auto 0;
 }
 
 /*
@@ -101,12 +86,12 @@ let code = `
  * 加上酒窝
  */
 .face{
+    position: absolute;
     width: 68px;
     height: 68px;
     border-radius: 50%;
     background: #fc0d1c;
     border: 2px solid black;
-    position: absolute;
     top: 85px;
 }
 /* 
@@ -155,15 +140,7 @@ let code = `
 /* 
  * 画上舌头
  */
-.lowerLip-wrapper{
-    bottom: -18px;
-    position: absolute;
-    left: 50%;
-    margin-left: -160px;
-    width: 300px;
-    height: 125px;
-    overflow: hidden;
-}
+
 .lowerLip{
     width: 320px;
     height: 3500px;
@@ -190,21 +167,28 @@ let code = `
  * 皮卡丘完成了～
  */
 
-`;
 
-  writeCode('', code);
-  $('.actions').on('click','button',function (e) {
-      let $button = $(e.currentTarget);
-      let $speed = $button.attr('data-speed');
-      $button.addClass('btn-primary');
-      $button.siblings().removeClass('btn-primary');
-      switch ($speed){
-          case 'normal':
-              duration = 20;
-              break
-          case 'fast':
-              duration = 0;
-              break
-      }
-  })
+/* 
+ *  最后，让我们的皮卡丘动起来！
+ */
+
+@keyframes blink {
+    0%, 2%, 60%, 62%, 100% {
+        -webkit-transform: scaleX(1) scaleY(1);
+        transform: scaleX(1) scaleY(1);
+    }
+    1%, 61% {
+        -webkit-transform: scaleX(1.5) scaleY(0.1);
+        transform: scaleX(1.5) scaleY(0.1);
+    }
+}
+
+/*
+ *  眨眨眼睛！
+ */
+
+.upper-face > *{
+    animation: blink forwards infinite 8s ease-in-out;
+}
+ `;
 }();

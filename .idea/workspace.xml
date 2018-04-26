@@ -4,7 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/mobile/index.html" line="19" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b09eebb7-a164-4281-bea3-630c2365e179" name="Default" comment="" />
+    <list default="true" id="b09eebb7-a164-4281-bea3-630c2365e179" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/axios和vue和jq/vue轮播/index.html" afterPath="$PROJECT_DIR$/axios和vue和jq/vue轮播/index.html" />
+      <change beforePath="$PROJECT_DIR$/axios和vue和jq/vue轮播/main.js" afterPath="$PROJECT_DIR$/axios和vue和jq/vue轮播/main.js" />
+      <change beforePath="$PROJECT_DIR$/resume/test.html" afterPath="$PROJECT_DIR$/resume/test.html" />
+      <change beforePath="$PROJECT_DIR$/resume/test.js" afterPath="$PROJECT_DIR$/resume/test.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,35 +24,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/axios和vue和jq/vue轮播/index.html">
+        <entry file="file://$PROJECT_DIR$/Pikachu/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="622">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/axios和vue和jq/vue轮播/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/axios和vue和jq/vue轮播/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding>
-                <marker date="1524629932152" expanded="true" signature="105:412" ph="..." />
-                <marker date="1524629932152" expanded="true" signature="134:401" ph="..." />
-                <marker date="1524629932152" expanded="true" signature="168:236" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -156,13 +138,13 @@
         <option value="$PROJECT_DIR$/webpack-demo/src/css/main.scss" />
         <option value="$PROJECT_DIR$/resume/index.html" />
         <option value="$PROJECT_DIR$/resume/test.css" />
-        <option value="$PROJECT_DIR$/resume/test.js" />
-        <option value="$PROJECT_DIR$/resume/test.html" />
         <option value="$PROJECT_DIR$/axios和vue和jq/jq和axios/main.js" />
         <option value="$PROJECT_DIR$/axios和vue和jq/jq和axios/index.html" />
         <option value="$PROJECT_DIR$/axios和vue和jq/vue轮播/style.css" />
-        <option value="$PROJECT_DIR$/axios和vue和jq/vue轮播/index.html" />
         <option value="$PROJECT_DIR$/axios和vue和jq/vue轮播/main.js" />
+        <option value="$PROJECT_DIR$/axios和vue和jq/vue轮播/index.html" />
+        <option value="$PROJECT_DIR$/resume/test.html" />
+        <option value="$PROJECT_DIR$/resume/test.js" />
       </list>
     </option>
   </component>
@@ -308,16 +290,15 @@
       <updated>1521304870577</updated>
       <workItem from="1521304871719" duration="31901000" />
       <workItem from="1521788268902" duration="160568000" />
-      <workItem from="1524110188901" duration="59860000" />
+      <workItem from="1524110188901" duration="62856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252329000" />
+    <option name="totallyTimeSpent" value="255325000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15208334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -427,14 +408,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="94" column="23" lean-forward="false" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pikachu/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -712,32 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resume/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="115" selection-end-column="1" />
-          <folding>
-            <marker date="1524579503281" expanded="true" signature="795:1127" ph="..." />
-            <marker date="1524579503281" expanded="true" signature="805:891" ph="..." />
-            <marker date="1524579503281" expanded="true" signature="901:952" ph="..." />
-            <marker date="1524579503281" expanded="true" signature="962:1118" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1524583152499" expanded="true" signature="1528:1855" ph="..." />
-            <marker date="1524583152499" expanded="true" signature="1538:1618" ph="..." />
-            <marker date="1524583152499" expanded="true" signature="1628:1686" ph="..." />
-            <marker date="1524583152499" expanded="true" signature="1696:1846" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/axios和vue和jq/jq和axios/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1143">
@@ -778,22 +725,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/axios和vue和jq/vue轮播/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/axios和vue和jq/vue轮播/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="176">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding>
-            <marker date="1524629932152" expanded="true" signature="105:412" ph="..." />
-            <marker date="1524629932152" expanded="true" signature="134:401" ph="..." />
-            <marker date="1524629932152" expanded="true" signature="168:236" ph="..." />
+            <marker date="1524639629256" expanded="true" signature="107:414" ph="..." />
+            <marker date="1524639629256" expanded="true" signature="136:403" ph="..." />
+            <marker date="1524639629256" expanded="true" signature="170:238" ph="..." />
+            <marker date="1524639629256" expanded="true" signature="171:238" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/axios和vue和jq/vue轮播/index.html">
+    <entry file="file://$PROJECT_DIR$/resume/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="714">
+          <caret line="503" column="1" lean-forward="false" selection-start-line="503" selection-start-column="1" selection-end-line="503" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resume/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-232">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pikachu/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>

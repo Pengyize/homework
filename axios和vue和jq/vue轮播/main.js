@@ -1,7 +1,8 @@
 let view = new Vue({
     el: '#app',
     data:{
-        transformValue: ''
+        transformValue: '',
+
     },
     template:`
     <div>
