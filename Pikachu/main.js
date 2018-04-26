@@ -11,7 +11,7 @@
         paper.scrollTop = paper.scrollHeight;
         n += 1;
         if (n < code.length) {
-            timer = setTimeout(WriteCode, 10);
+            timer = setTimeout(WriteCode, 20);
         } else {
             setTimeout(function () {
                 container.classList.remove('black');
@@ -20,5 +20,5 @@
                 info.classList.remove('hide');
             },3000)
         }
-    }, 10)
+    }, 20)
 }();
