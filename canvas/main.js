@@ -1,4 +1,4 @@
-var canvas = document.querySelector("canvas");
+var canvas = document.querySelector("#canvas");
 
 var pen1 = document.getElementById('pen1');
 var pen2 = document.getElementById('pen2');
@@ -42,16 +42,16 @@ listenToUser(canvas);
 
 function drawLine(x1,y1,x2,y2) {
     context.beginPath();
-    context.moveTo(x1,y1);
+    context.moveTo(x1-0,y1+29);
     context.lineWidth = lineWidth;
-    context.lineTo(x2,y2);
+    context.lineTo(x2-0,y2+29);
     context.stroke();
     context.closePath();
 }
 
 function drawCircle(x,y,r) {
     context.beginPath();
-    context.arc(x,y,r,0,Math.PI*2);
+    context.arc(x-0,y+29,r,0,Math.PI*2);
     context.fill();
 }
 
@@ -136,6 +136,7 @@ function listenToUser(canvas) {
         pen1.classList.add('active');
         pen2.classList.remove('active');
         eraser.classList.remove('active');
+        canvas.className = 'pencil';
     };
     pen2.onclick = function () {
         eraserEnabled = false;
@@ -144,12 +145,14 @@ function listenToUser(canvas) {
         pen2.classList.add('active');
         pen1.classList.remove('active');
         eraser.classList.remove('active');
+        canvas.className = 'pen'
     };
     eraser.onclick = function () {
         eraserEnabled = true;
         eraser.classList.add('active');
         pen1.classList.remove('active');
         pen2.classList.remove('active');
+        canvas.className = 'eraser'
     };
     clear.onclick = function () {
         if(backWhiteTest === 1){
@@ -179,7 +182,7 @@ function listenToUser(canvas) {
             using = true;
 
             if(eraserEnabled){
-                context.clearRect(x-5,y-5,20,20);
+                context.clearRect(x-5,y-5,30,30);
             }else{
                 lastPoint = {x:x,y:y};
                 drawCircle(x,y,r);
@@ -192,7 +195,7 @@ function listenToUser(canvas) {
 
             if(using){
                 if(eraserEnabled){
-                    context.clearRect(x-5,y-5,20,20);
+                    context.clearRect(x-5,y-5,30,30);
                 }else {
                     var newPoint = {x:x,y:y};
                     drawCircle(x,y,r);
@@ -214,7 +217,7 @@ function listenToUser(canvas) {
             using = true;
 
             if(eraserEnabled){
-                context.clearRect(x-5,y-5,20,20);
+                context.clearRect(x-5,y-5,30,30);
             }else{
                 lastPoint = {x:x,y:y};
                 drawCircle(x,y,r);
@@ -228,7 +231,7 @@ function listenToUser(canvas) {
 
             if(using){
                 if(eraserEnabled){
-                    context.clearRect(x-5,y-5,20,20);
+                    context.clearRect(x-5,y-5,30,30);
                 }else {
                     var newPoint = {x:x,y:y};
                     drawCircle(x,y,r);

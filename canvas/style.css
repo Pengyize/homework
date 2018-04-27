@@ -32,7 +32,7 @@ a{
 #canvas{
     background: white;
     display: block;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -42,6 +42,7 @@ a{
     top: 2px;
     left: 2px;
     padding: 15px 20px 20px 10px;
+    z-index: 10;
 }
 .actions svg{
     width: 2em;
@@ -49,6 +50,11 @@ a{
     transition: all 0.3s;
     margin: 0 8px;
 }
+
+.actions svg:hover{
+    cursor: pointer;
+}
+
 .actions svg.active{
     transform: scale(1.4);
 }
@@ -58,6 +64,8 @@ a{
     position: fixed;
     top: 19px;
     left: 196px;
+    z-index: 10;
+    cursor: pointer;
 }
 .colors > li{
     border-radius: 50%;
@@ -68,6 +76,7 @@ a{
     position: fixed;
     bottom: 0;
     left: 15px;
+    cursor: pointer;
 }
 .backgroundColors > li {
     border: 1px solid #666;
@@ -83,7 +92,6 @@ a{
     position: fixed;
     right: 15px;
     bottom: 24px;
-
 }
 
 .download > svg{
@@ -126,4 +134,14 @@ ol > li.orange.active{
 }
 .green{
     background-color: #85e353;
+}
+
+#canvas.pencil{
+    cursor: url("./pencil.png"), default;
+}
+#canvas.pen{
+    cursor: url("./pen.png"), default;
+}
+#canvas.eraser{
+    cursor: url("./eraser.png"), default;
 }
