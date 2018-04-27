@@ -86,12 +86,12 @@ a{
 
 }
 
-#download{
+.download > svg{
     position: fixed;
     right: 58px;
     bottom: 15px;
-    width: 3.2em;
-    height: 3.2em;
+    width: 3.1em;
+    height: 3.1em;
 }
 
 ol > li {

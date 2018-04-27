@@ -13,7 +13,6 @@
 </head>
 <body>
 
-    <canvas id="canvas"></canvas>
 
 
 
@@ -34,10 +33,11 @@
             <use xlink:href="#icon-garbage"></use>
         </svg>
 
-        <svg id="download" class="icon">
-            <use xlink:href="#icon-download"></use>
-        </svg>
-
+        <a download class="download">
+            <svg class="icon">
+                <use xlink:href="#icon-download"></use>
+            </svg>
+        </a>
     </div>
 
     <ol class="colors clearfix">
@@ -46,6 +46,7 @@
         <li id="orange" class="orange"></li>
         <li id="green" class="green"></li>
     </ol>
+    <canvas></canvas>
 
     <ol class="backgroundColors clearfix">
         <li id="backWhite" class="white"></li>

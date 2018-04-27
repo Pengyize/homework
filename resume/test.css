@@ -1,9 +1,23 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-div{
-    border:50px solid transparent;
-    width:0;
-    height:0;
-    border-bottom: 100px solid red;
+
+.parent{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    padding: 10px;
+}
+
+.son{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid red;
 }

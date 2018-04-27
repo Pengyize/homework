@@ -1,10 +1,11 @@
-var canvas = document.getElementById('canvas');
+var canvas = document.querySelector("canvas");
 
 var pen1 = document.getElementById('pen1');
 var pen2 = document.getElementById('pen2');
 var eraser = document.getElementById('eraser');
 var clear =document.getElementById('clear');
-var download = document.getElementById('download');
+var download = document.querySelector(".download");
+console.log(download)
 
 var black = document.getElementById('black');
 var blue = document.getElementById('blue');
@@ -70,12 +71,6 @@ function autoSetCanvasSize(canvas) {
 
 }
 
-// function dlCanvas() {
-//     var url = canvas.toDataURL('image/png');
-//     download.href = url;
-//     download.target = '_blank';
-//     download.download = '画';
-// }
 
 
 function listenToUser(canvas) {
@@ -165,39 +160,9 @@ function listenToUser(canvas) {
         }
         context.fillStyle = theColor;
     };
-    download.onclick = function () {
-        var imgURL = canvas.toDataURL('image/png');
-        var a = document.createElement('a');
-        document.body.appendChild(a);
-        a.href = imgURL;
-        a.dataset.downloadurl = ['image/png', a.download, a.href].join(':');
-        a.target = '_blank';
-        a.download = '画';
-        a.click();
-        document.body.removeChild(a);
-        black.click();
-        backWhiteTest = 0;
-        backWhite.classList.remove('active');
-        context.clearRect(0,0,canvas.width,canvas.height);
-    };
-
-    // download.onclick = function () {
-    //     var MIME_TYPE = "image/png";
-    //
-    //     var imgURL = canvas.toDataURL(MIME_TYPE);
-    //
-    //     var dlLink = document.createElement('a');
-    //     dlLink.download = '画';
-    //     dlLink.href = imgURL;
-    //     dlLink.dataset.downloadurl = [MIME_TYPE, dlLink.download, dlLink.href].join(':');
-    //     dlLink.target = '_blank';
-    //     document.body.appendChild(dlLink);
-    //     dlLink.click();
-    //     document.body.removeChild(dlLink);
-    //     console.log(123);
-    // };
-
-
+    download.onclick = function(){
+        download.href = canvas.toDataURL();
+    }
 
     var using = false;
 
