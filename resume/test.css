@@ -1,23 +1,24 @@
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 .parent{
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
-    position: absolute;
-    left: 100px;
-    top: 100px;
-    padding: 10px;
+    border: 1px solid red;
+    padding: 10px 0;
 }
 
 .son{
+    box-sizing: border-box;
+    border: 1px solid grey;
     width: 100px;
     height: 100px;
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid red;
+    background: blue;
+        float: left;
+}
+
+.clearfix{
+    content: '';
+    clear: both;
+    display: block;
 }
