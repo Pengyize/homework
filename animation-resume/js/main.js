@@ -11,7 +11,7 @@ function writeCode(prefix,code,fn) {
             window.clearInterval(id);
             fn && fn.call();
         }
-    },70)
+    },30)
 }
 
 function writeMarkdown(markdown,fn) {
@@ -25,7 +25,7 @@ function writeMarkdown(markdown,fn) {
             window.clearInterval(id);
             fn && fn();
         }
-    },70);
+    },30);
 
 }
 
