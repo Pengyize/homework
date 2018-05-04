@@ -30,7 +30,7 @@
         scrollToElement: function (element) {
             let top = element.offsetTop;
             let currentTop = window.scrollY;  //当前位置
-            let targetTop = top-120;    //目标位置
+            let targetTop = top-200;    //目标位置
             let coords = { y: currentTop};
             let tween = new TWEEN.Tween(coords)
                 .to({ y: targetTop}, 600)

@@ -37,7 +37,7 @@
             this.model.save({'content':content,'name':name}).then(function(object) {
                 let li = document.createElement('li');
                 li.innerText = `${object.attributes.name}: ${object.attributes.content}`;
-                this.messageList.appendChild(li);
+                this.messageList.insertBefore(li,this.messageList.firstChild);
                 myForm.querySelector('input[name=content]').value = '';
             });
         }
